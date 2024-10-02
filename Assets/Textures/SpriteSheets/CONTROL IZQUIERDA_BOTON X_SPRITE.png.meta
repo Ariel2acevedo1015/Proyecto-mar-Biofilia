@@ -1,0 +1,1171 @@
+fileFormatVersion: 2
+guid: 83b08224f77fcff449499c429414e18c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_0
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 9864
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8a4f1bf497061499374c95f1153d78
+      internalID: -863982103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_1
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 9864
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17742c7dfea6bc47b781e8a376da0f3
+      internalID: -1653148645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_2
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 9864
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6de373a3b1c7c4ebef47883a269376
+      internalID: -1837379612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_3
+      rect:
+        serializedVersion: 2
+        x: 3546
+        y: 9864
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bda492f906ed249b524e1e1561138b
+      internalID: 720047062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_4
+      rect:
+        serializedVersion: 2
+        x: 4622
+        y: 9864
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0df28ccefe6299458cdc26c8dfa8d94
+      internalID: 1694256749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_49
+      rect:
+        serializedVersion: 2
+        x: 3546
+        y: 6621
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0793f15f2e7f3f1459fba89aa3b7e182
+      internalID: 241385481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_50
+      rect:
+        serializedVersion: 2
+        x: 4622
+        y: 6621
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd40a17dba97574b80da77a9fb39262
+      internalID: 1895632771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_51
+      rect:
+        serializedVersion: 2
+        x: 5703
+        y: 6621
+        width: 614
+        height: 739
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86df08676685aff4b9ed09503475cae7
+      internalID: 1816774570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_52
+      rect:
+        serializedVersion: 2
+        x: 6784
+        y: 6623
+        width: 596
+        height: 737
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e7531fecf1e6c49ba4aa3cca032f9e
+      internalID: -718666215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_54
+      rect:
+        serializedVersion: 2
+        x: 7865
+        y: 6621
+        width: 602
+        height: 795
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44921e4d09800344d91889fe596c401e
+      internalID: -1973480096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_56
+      rect:
+        serializedVersion: 2
+        x: 8946
+        y: 6621
+        width: 603
+        height: 826
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae9dcde077232447929cceae743e6f9
+      internalID: -625253836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_58
+      rect:
+        serializedVersion: 2
+        x: 10022
+        y: 6621
+        width: 590
+        height: 837
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525bbccf2af4e0244b52747e909009ac
+      internalID: -66101186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_101
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 5541
+        width: 635
+        height: 845
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b307236c65def459cdc4e4d16a40b9
+      internalID: 1262312168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_103
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 5541
+        width: 618
+        height: 857
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31904a68314092f41b95fa12089eca24
+      internalID: -1995524511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_105
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 5541
+        width: 617
+        height: 870
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af2b3e6eae5f8d4ea2a3210306c63b6
+      internalID: 416210934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_107
+      rect:
+        serializedVersion: 2
+        x: 3549
+        y: 5541
+        width: 593
+        height: 887
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea01d3791d368e41955467cf88ba9fb
+      internalID: -1177903015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_109
+      rect:
+        serializedVersion: 2
+        x: 4607
+        y: 5541
+        width: 611
+        height: 882
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58980cfb652f1774994d7e423e3c101b
+      internalID: 75559529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_165
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 4464
+        width: 640
+        height: 877
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abfc137ad9d5f44ab8283b1f7279491
+      internalID: 1540029207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_166
+      rect:
+        serializedVersion: 2
+        x: 7809
+        y: 4464
+        width: 652
+        height: 870
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27b23bca7d1ffa43a9e296b36e7b015
+      internalID: 304623657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_167
+      rect:
+        serializedVersion: 2
+        x: 8894
+        y: 4464
+        width: 648
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2798dcdf782544b9afcf5fbe1e9af6
+      internalID: 2094466539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_168
+      rect:
+        serializedVersion: 2
+        x: 9969
+        y: 4464
+        width: 649
+        height: 864
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01be064244d85b94e818d62b1c801da1
+      internalID: 1376630083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_209
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 3383
+        width: 629
+        height: 863
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c231bbb8851db1f43857d2a984f6b1a0
+      internalID: 1692843363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_210
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 3383
+        width: 659
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd5c457226660142b537c0e88464b8d
+      internalID: 1668676635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_211
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 3383
+        width: 644
+        height: 871
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e8b9e12ac788c419949ecdc8aaf6f4
+      internalID: 1339999948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_212
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 3383
+        width: 645
+        height: 863
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a95c61c72b10a44f9cc6abb80b27604
+      internalID: -327132815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_213
+      rect:
+        serializedVersion: 2
+        x: 4572
+        y: 3383
+        width: 646
+        height: 854
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc136cdcee9aeb44f91b6d09266cf078
+      internalID: -2120467864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_214
+      rect:
+        serializedVersion: 2
+        x: 5648
+        y: 3383
+        width: 651
+        height: 871
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8dbda0a72350724e9de42a7b7310313
+      internalID: 973472613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_215
+      rect:
+        serializedVersion: 2
+        x: 6731
+        y: 3383
+        width: 649
+        height: 863
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6fedfd067a57e4d8b27067e35d1a08
+      internalID: 1825268346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_216
+      rect:
+        serializedVersion: 2
+        x: 7803
+        y: 3383
+        width: 662
+        height: 858
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973c73e908457b54883fb70604d6388b
+      internalID: 1666396181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_218
+      rect:
+        serializedVersion: 2
+        x: 8934
+        y: 3376
+        width: 608
+        height: 852
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce9334171def6b4da50de8bef958699
+      internalID: -1666503161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_225
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 2302
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169c8d0ce50befe408276478cd8ed931
+      internalID: 540892919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_226
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 2302
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c0804d9487f804db7712333a803807
+      internalID: -566819476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_227
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 2302
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98814104e1ef1b4682d52e3addf9e05
+      internalID: 2141922070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_228
+      rect:
+        serializedVersion: 2
+        x: 3546
+        y: 2302
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25956b86d19ecf4890d796d8d0f4245
+      internalID: -1354009836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_229
+      rect:
+        serializedVersion: 2
+        x: 4622
+        y: 2302
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a092948e7bf444aa6f6041f75f6538
+      internalID: -125352709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_230
+      rect:
+        serializedVersion: 2
+        x: 5703
+        y: 2302
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4d1e753ff84d348a6ee98462b20e6d
+      internalID: -181352664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_231
+      rect:
+        serializedVersion: 2
+        x: 6784
+        y: 2302
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18a597468c7a654b99f2441b7aaed4d
+      internalID: 41695865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL IZQUIERDA_BOTON X_SPRITE_244
+      rect:
+        serializedVersion: 2
+        x: 10022
+        y: 1221
+        width: 596
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89ea6c35471ac94d9271526c89c021b
+      internalID: 113972027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9aa2c9946fb3257478fb9e52b51ece38
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CONTROL IZQUIERDA_BOTON X_SPRITE_0: -863982103
+      CONTROL IZQUIERDA_BOTON X_SPRITE_1: -1653148645
+      CONTROL IZQUIERDA_BOTON X_SPRITE_10: -276766743
+      CONTROL IZQUIERDA_BOTON X_SPRITE_100: -1097402734
+      CONTROL IZQUIERDA_BOTON X_SPRITE_101: 1262312168
+      CONTROL IZQUIERDA_BOTON X_SPRITE_102: 1898629644
+      CONTROL IZQUIERDA_BOTON X_SPRITE_103: -1995524511
+      CONTROL IZQUIERDA_BOTON X_SPRITE_104: 177087558
+      CONTROL IZQUIERDA_BOTON X_SPRITE_105: 416210934
+      CONTROL IZQUIERDA_BOTON X_SPRITE_106: 931809913
+      CONTROL IZQUIERDA_BOTON X_SPRITE_107: -1177903015
+      CONTROL IZQUIERDA_BOTON X_SPRITE_108: 2028882395
+      CONTROL IZQUIERDA_BOTON X_SPRITE_109: 75559529
+      CONTROL IZQUIERDA_BOTON X_SPRITE_11: 326581843
+      CONTROL IZQUIERDA_BOTON X_SPRITE_110: 841678909
+      CONTROL IZQUIERDA_BOTON X_SPRITE_111: -624836940
+      CONTROL IZQUIERDA_BOTON X_SPRITE_112: -434577534
+      CONTROL IZQUIERDA_BOTON X_SPRITE_113: -1489738527
+      CONTROL IZQUIERDA_BOTON X_SPRITE_114: -365161494
+      CONTROL IZQUIERDA_BOTON X_SPRITE_115: -1260982301
+      CONTROL IZQUIERDA_BOTON X_SPRITE_116: 1168474697
+      CONTROL IZQUIERDA_BOTON X_SPRITE_117: 750306428
+      CONTROL IZQUIERDA_BOTON X_SPRITE_118: -134490762
+      CONTROL IZQUIERDA_BOTON X_SPRITE_119: 1211756992
+      CONTROL IZQUIERDA_BOTON X_SPRITE_12: -242060181
+      CONTROL IZQUIERDA_BOTON X_SPRITE_120: -867312081
+      CONTROL IZQUIERDA_BOTON X_SPRITE_121: -650590105
+      CONTROL IZQUIERDA_BOTON X_SPRITE_122: -1921331387
+      CONTROL IZQUIERDA_BOTON X_SPRITE_123: 1493844237
+      CONTROL IZQUIERDA_BOTON X_SPRITE_124: 491014045
+      CONTROL IZQUIERDA_BOTON X_SPRITE_125: 444953674
+      CONTROL IZQUIERDA_BOTON X_SPRITE_126: -1965948202
+      CONTROL IZQUIERDA_BOTON X_SPRITE_127: 1523438882
+      CONTROL IZQUIERDA_BOTON X_SPRITE_128: -495748662
+      CONTROL IZQUIERDA_BOTON X_SPRITE_129: -1807987631
+      CONTROL IZQUIERDA_BOTON X_SPRITE_13: -1353759583
+      CONTROL IZQUIERDA_BOTON X_SPRITE_130: 503710176
+      CONTROL IZQUIERDA_BOTON X_SPRITE_131: -144322719
+      CONTROL IZQUIERDA_BOTON X_SPRITE_132: 1124508639
+      CONTROL IZQUIERDA_BOTON X_SPRITE_133: -1068496963
+      CONTROL IZQUIERDA_BOTON X_SPRITE_134: 1927312213
+      CONTROL IZQUIERDA_BOTON X_SPRITE_135: 1619508926
+      CONTROL IZQUIERDA_BOTON X_SPRITE_136: -634907371
+      CONTROL IZQUIERDA_BOTON X_SPRITE_137: 17658034
+      CONTROL IZQUIERDA_BOTON X_SPRITE_138: -1432903214
+      CONTROL IZQUIERDA_BOTON X_SPRITE_139: 1653025924
+      CONTROL IZQUIERDA_BOTON X_SPRITE_14: 200328452
+      CONTROL IZQUIERDA_BOTON X_SPRITE_140: -425984772
+      CONTROL IZQUIERDA_BOTON X_SPRITE_141: 881214644
+      CONTROL IZQUIERDA_BOTON X_SPRITE_142: -1698346389
+      CONTROL IZQUIERDA_BOTON X_SPRITE_143: 660886717
+      CONTROL IZQUIERDA_BOTON X_SPRITE_144: 141661583
+      CONTROL IZQUIERDA_BOTON X_SPRITE_145: -1304141168
+      CONTROL IZQUIERDA_BOTON X_SPRITE_146: -34665320
+      CONTROL IZQUIERDA_BOTON X_SPRITE_147: 923218958
+      CONTROL IZQUIERDA_BOTON X_SPRITE_148: -1231684760
+      CONTROL IZQUIERDA_BOTON X_SPRITE_149: 1758987462
+      CONTROL IZQUIERDA_BOTON X_SPRITE_15: -2012877344
+      CONTROL IZQUIERDA_BOTON X_SPRITE_150: -192943612
+      CONTROL IZQUIERDA_BOTON X_SPRITE_151: 472724316
+      CONTROL IZQUIERDA_BOTON X_SPRITE_152: -1670948593
+      CONTROL IZQUIERDA_BOTON X_SPRITE_153: -1669864305
+      CONTROL IZQUIERDA_BOTON X_SPRITE_154: 844991070
+      CONTROL IZQUIERDA_BOTON X_SPRITE_155: -329383233
+      CONTROL IZQUIERDA_BOTON X_SPRITE_156: -986690149
+      CONTROL IZQUIERDA_BOTON X_SPRITE_157: -110675354
+      CONTROL IZQUIERDA_BOTON X_SPRITE_158: -1703956423
+      CONTROL IZQUIERDA_BOTON X_SPRITE_159: -815821230
+      CONTROL IZQUIERDA_BOTON X_SPRITE_16: 987258361
+      CONTROL IZQUIERDA_BOTON X_SPRITE_160: 1843058565
+      CONTROL IZQUIERDA_BOTON X_SPRITE_161: -621764859
+      CONTROL IZQUIERDA_BOTON X_SPRITE_162: 1546688440
+      CONTROL IZQUIERDA_BOTON X_SPRITE_163: -496385604
+      CONTROL IZQUIERDA_BOTON X_SPRITE_164: 1028381543
+      CONTROL IZQUIERDA_BOTON X_SPRITE_165: 1540029207
+      CONTROL IZQUIERDA_BOTON X_SPRITE_166: 304623657
+      CONTROL IZQUIERDA_BOTON X_SPRITE_167: 2094466539
+      CONTROL IZQUIERDA_BOTON X_SPRITE_168: 1376630083
+      CONTROL IZQUIERDA_BOTON X_SPRITE_169: 923229125
+      CONTROL IZQUIERDA_BOTON X_SPRITE_17: -839595445
+      CONTROL IZQUIERDA_BOTON X_SPRITE_170: -346417555
+      CONTROL IZQUIERDA_BOTON X_SPRITE_171: 743642315
+      CONTROL IZQUIERDA_BOTON X_SPRITE_172: -1030746403
+      CONTROL IZQUIERDA_BOTON X_SPRITE_173: -491985579
+      CONTROL IZQUIERDA_BOTON X_SPRITE_174: -1125202235
+      CONTROL IZQUIERDA_BOTON X_SPRITE_175: 1735380490
+      CONTROL IZQUIERDA_BOTON X_SPRITE_176: -1309419378
+      CONTROL IZQUIERDA_BOTON X_SPRITE_177: 1378871434
+      CONTROL IZQUIERDA_BOTON X_SPRITE_178: -343003625
+      CONTROL IZQUIERDA_BOTON X_SPRITE_179: -559539602
+      CONTROL IZQUIERDA_BOTON X_SPRITE_18: -168072812
+      CONTROL IZQUIERDA_BOTON X_SPRITE_180: -380165261
+      CONTROL IZQUIERDA_BOTON X_SPRITE_181: 1036787746
+      CONTROL IZQUIERDA_BOTON X_SPRITE_182: -1151894005
+      CONTROL IZQUIERDA_BOTON X_SPRITE_183: 1238683508
+      CONTROL IZQUIERDA_BOTON X_SPRITE_184: 508351193
+      CONTROL IZQUIERDA_BOTON X_SPRITE_185: 2052644126
+      CONTROL IZQUIERDA_BOTON X_SPRITE_186: -1003031379
+      CONTROL IZQUIERDA_BOTON X_SPRITE_187: 738060003
+      CONTROL IZQUIERDA_BOTON X_SPRITE_188: 1288752289
+      CONTROL IZQUIERDA_BOTON X_SPRITE_189: 1256113416
+      CONTROL IZQUIERDA_BOTON X_SPRITE_19: 1114794125
+      CONTROL IZQUIERDA_BOTON X_SPRITE_190: 102739800
+      CONTROL IZQUIERDA_BOTON X_SPRITE_191: -765884042
+      CONTROL IZQUIERDA_BOTON X_SPRITE_192: -207440120
+      CONTROL IZQUIERDA_BOTON X_SPRITE_193: -1094993243
+      CONTROL IZQUIERDA_BOTON X_SPRITE_194: 1361759878
+      CONTROL IZQUIERDA_BOTON X_SPRITE_195: -1952906455
+      CONTROL IZQUIERDA_BOTON X_SPRITE_196: 1401994505
+      CONTROL IZQUIERDA_BOTON X_SPRITE_197: -72921402
+      CONTROL IZQUIERDA_BOTON X_SPRITE_198: 242751202
+      CONTROL IZQUIERDA_BOTON X_SPRITE_199: 268944582
+      CONTROL IZQUIERDA_BOTON X_SPRITE_2: -1837379612
+      CONTROL IZQUIERDA_BOTON X_SPRITE_20: 1850660548
+      CONTROL IZQUIERDA_BOTON X_SPRITE_200: -1468880320
+      CONTROL IZQUIERDA_BOTON X_SPRITE_201: -915511729
+      CONTROL IZQUIERDA_BOTON X_SPRITE_202: 798039487
+      CONTROL IZQUIERDA_BOTON X_SPRITE_203: 1490182769
+      CONTROL IZQUIERDA_BOTON X_SPRITE_204: -731805908
+      CONTROL IZQUIERDA_BOTON X_SPRITE_205: -242922729
+      CONTROL IZQUIERDA_BOTON X_SPRITE_206: 943197211
+      CONTROL IZQUIERDA_BOTON X_SPRITE_207: 1578361203
+      CONTROL IZQUIERDA_BOTON X_SPRITE_208: -81314817
+      CONTROL IZQUIERDA_BOTON X_SPRITE_209: 1692843363
+      CONTROL IZQUIERDA_BOTON X_SPRITE_21: -1371206688
+      CONTROL IZQUIERDA_BOTON X_SPRITE_210: 1668676635
+      CONTROL IZQUIERDA_BOTON X_SPRITE_211: 1339999948
+      CONTROL IZQUIERDA_BOTON X_SPRITE_212: -327132815
+      CONTROL IZQUIERDA_BOTON X_SPRITE_213: -2120467864
+      CONTROL IZQUIERDA_BOTON X_SPRITE_214: 973472613
+      CONTROL IZQUIERDA_BOTON X_SPRITE_215: 1825268346
+      CONTROL IZQUIERDA_BOTON X_SPRITE_216: 1666396181
+      CONTROL IZQUIERDA_BOTON X_SPRITE_217: 350905512
+      CONTROL IZQUIERDA_BOTON X_SPRITE_218: -1666503161
+      CONTROL IZQUIERDA_BOTON X_SPRITE_219: -1291848175
+      CONTROL IZQUIERDA_BOTON X_SPRITE_22: 549284797
+      CONTROL IZQUIERDA_BOTON X_SPRITE_220: -78645293
+      CONTROL IZQUIERDA_BOTON X_SPRITE_221: 1581763420
+      CONTROL IZQUIERDA_BOTON X_SPRITE_222: 1150149069
+      CONTROL IZQUIERDA_BOTON X_SPRITE_223: -1618844536
+      CONTROL IZQUIERDA_BOTON X_SPRITE_224: 1023894439
+      CONTROL IZQUIERDA_BOTON X_SPRITE_225: 540892919
+      CONTROL IZQUIERDA_BOTON X_SPRITE_226: -566819476
+      CONTROL IZQUIERDA_BOTON X_SPRITE_227: 2141922070
+      CONTROL IZQUIERDA_BOTON X_SPRITE_228: -1354009836
+      CONTROL IZQUIERDA_BOTON X_SPRITE_229: -125352709
+      CONTROL IZQUIERDA_BOTON X_SPRITE_23: -2055544890
+      CONTROL IZQUIERDA_BOTON X_SPRITE_230: -181352664
+      CONTROL IZQUIERDA_BOTON X_SPRITE_231: 41695865
+      CONTROL IZQUIERDA_BOTON X_SPRITE_232: 960522255
+      CONTROL IZQUIERDA_BOTON X_SPRITE_233: 1520185652
+      CONTROL IZQUIERDA_BOTON X_SPRITE_234: -1289744137
+      CONTROL IZQUIERDA_BOTON X_SPRITE_235: 719208427
+      CONTROL IZQUIERDA_BOTON X_SPRITE_236: -1770054475
+      CONTROL IZQUIERDA_BOTON X_SPRITE_237: 1923453584
+      CONTROL IZQUIERDA_BOTON X_SPRITE_238: 2010193826
+      CONTROL IZQUIERDA_BOTON X_SPRITE_239: 1257584934
+      CONTROL IZQUIERDA_BOTON X_SPRITE_24: -834345996
+      CONTROL IZQUIERDA_BOTON X_SPRITE_240: 1740456110
+      CONTROL IZQUIERDA_BOTON X_SPRITE_241: -637065513
+      CONTROL IZQUIERDA_BOTON X_SPRITE_242: -802870850
+      CONTROL IZQUIERDA_BOTON X_SPRITE_243: -1975622678
+      CONTROL IZQUIERDA_BOTON X_SPRITE_244: 113972027
+      CONTROL IZQUIERDA_BOTON X_SPRITE_245: 1986682975
+      CONTROL IZQUIERDA_BOTON X_SPRITE_25: 518845972
+      CONTROL IZQUIERDA_BOTON X_SPRITE_26: -1497449713
+      CONTROL IZQUIERDA_BOTON X_SPRITE_27: 1772379923
+      CONTROL IZQUIERDA_BOTON X_SPRITE_28: -1822439239
+      CONTROL IZQUIERDA_BOTON X_SPRITE_29: -948217790
+      CONTROL IZQUIERDA_BOTON X_SPRITE_3: 720047062
+      CONTROL IZQUIERDA_BOTON X_SPRITE_30: 1478751093
+      CONTROL IZQUIERDA_BOTON X_SPRITE_31: 765179347
+      CONTROL IZQUIERDA_BOTON X_SPRITE_32: 2055774974
+      CONTROL IZQUIERDA_BOTON X_SPRITE_33: -1164499808
+      CONTROL IZQUIERDA_BOTON X_SPRITE_34: 1431004905
+      CONTROL IZQUIERDA_BOTON X_SPRITE_35: 1184084704
+      CONTROL IZQUIERDA_BOTON X_SPRITE_36: -893322936
+      CONTROL IZQUIERDA_BOTON X_SPRITE_37: -96665665
+      CONTROL IZQUIERDA_BOTON X_SPRITE_38: -1446871859
+      CONTROL IZQUIERDA_BOTON X_SPRITE_39: -652009958
+      CONTROL IZQUIERDA_BOTON X_SPRITE_4: 1694256749
+      CONTROL IZQUIERDA_BOTON X_SPRITE_40: 1727760336
+      CONTROL IZQUIERDA_BOTON X_SPRITE_41: -870776685
+      CONTROL IZQUIERDA_BOTON X_SPRITE_42: 1770711810
+      CONTROL IZQUIERDA_BOTON X_SPRITE_43: -124265291
+      CONTROL IZQUIERDA_BOTON X_SPRITE_44: 333858824
+      CONTROL IZQUIERDA_BOTON X_SPRITE_45: -455497016
+      CONTROL IZQUIERDA_BOTON X_SPRITE_46: -1441990680
+      CONTROL IZQUIERDA_BOTON X_SPRITE_47: -929762429
+      CONTROL IZQUIERDA_BOTON X_SPRITE_48: -2010710923
+      CONTROL IZQUIERDA_BOTON X_SPRITE_49: 241385481
+      CONTROL IZQUIERDA_BOTON X_SPRITE_5: -1152404568
+      CONTROL IZQUIERDA_BOTON X_SPRITE_50: 1895632771
+      CONTROL IZQUIERDA_BOTON X_SPRITE_51: 1816774570
+      CONTROL IZQUIERDA_BOTON X_SPRITE_52: -718666215
+      CONTROL IZQUIERDA_BOTON X_SPRITE_53: 1632277544
+      CONTROL IZQUIERDA_BOTON X_SPRITE_54: -1973480096
+      CONTROL IZQUIERDA_BOTON X_SPRITE_55: -102077789
+      CONTROL IZQUIERDA_BOTON X_SPRITE_56: -625253836
+      CONTROL IZQUIERDA_BOTON X_SPRITE_57: 232029221
+      CONTROL IZQUIERDA_BOTON X_SPRITE_58: -66101186
+      CONTROL IZQUIERDA_BOTON X_SPRITE_59: -906207387
+      CONTROL IZQUIERDA_BOTON X_SPRITE_6: -527934977
+      CONTROL IZQUIERDA_BOTON X_SPRITE_60: -727166920
+      CONTROL IZQUIERDA_BOTON X_SPRITE_61: 742561896
+      CONTROL IZQUIERDA_BOTON X_SPRITE_62: -1078938346
+      CONTROL IZQUIERDA_BOTON X_SPRITE_63: -263928379
+      CONTROL IZQUIERDA_BOTON X_SPRITE_64: -1067792621
+      CONTROL IZQUIERDA_BOTON X_SPRITE_65: -1301000850
+      CONTROL IZQUIERDA_BOTON X_SPRITE_66: 776425518
+      CONTROL IZQUIERDA_BOTON X_SPRITE_67: 180560503
+      CONTROL IZQUIERDA_BOTON X_SPRITE_68: -1317625882
+      CONTROL IZQUIERDA_BOTON X_SPRITE_69: -514371598
+      CONTROL IZQUIERDA_BOTON X_SPRITE_7: -1615937316
+      CONTROL IZQUIERDA_BOTON X_SPRITE_70: 1702621065
+      CONTROL IZQUIERDA_BOTON X_SPRITE_71: -986914024
+      CONTROL IZQUIERDA_BOTON X_SPRITE_72: -293369732
+      CONTROL IZQUIERDA_BOTON X_SPRITE_73: -392652383
+      CONTROL IZQUIERDA_BOTON X_SPRITE_74: 1264191005
+      CONTROL IZQUIERDA_BOTON X_SPRITE_75: 694096902
+      CONTROL IZQUIERDA_BOTON X_SPRITE_76: -465447525
+      CONTROL IZQUIERDA_BOTON X_SPRITE_77: 472174124
+      CONTROL IZQUIERDA_BOTON X_SPRITE_78: 1831148498
+      CONTROL IZQUIERDA_BOTON X_SPRITE_79: -1296720564
+      CONTROL IZQUIERDA_BOTON X_SPRITE_8: 602305206
+      CONTROL IZQUIERDA_BOTON X_SPRITE_80: -1846988477
+      CONTROL IZQUIERDA_BOTON X_SPRITE_81: 1426323997
+      CONTROL IZQUIERDA_BOTON X_SPRITE_82: 575279944
+      CONTROL IZQUIERDA_BOTON X_SPRITE_83: 873899866
+      CONTROL IZQUIERDA_BOTON X_SPRITE_84: 1076888861
+      CONTROL IZQUIERDA_BOTON X_SPRITE_85: -1011622439
+      CONTROL IZQUIERDA_BOTON X_SPRITE_86: 156072111
+      CONTROL IZQUIERDA_BOTON X_SPRITE_87: 449589745
+      CONTROL IZQUIERDA_BOTON X_SPRITE_88: -293794266
+      CONTROL IZQUIERDA_BOTON X_SPRITE_89: -795658405
+      CONTROL IZQUIERDA_BOTON X_SPRITE_9: 2054868797
+      CONTROL IZQUIERDA_BOTON X_SPRITE_90: 1214808415
+      CONTROL IZQUIERDA_BOTON X_SPRITE_91: 1582965589
+      CONTROL IZQUIERDA_BOTON X_SPRITE_92: -379272605
+      CONTROL IZQUIERDA_BOTON X_SPRITE_93: -1007684409
+      CONTROL IZQUIERDA_BOTON X_SPRITE_94: 1453090585
+      CONTROL IZQUIERDA_BOTON X_SPRITE_95: 1095652804
+      CONTROL IZQUIERDA_BOTON X_SPRITE_96: 4576829
+      CONTROL IZQUIERDA_BOTON X_SPRITE_97: -846000796
+      CONTROL IZQUIERDA_BOTON X_SPRITE_98: 1300308344
+      CONTROL IZQUIERDA_BOTON X_SPRITE_99: -1940991665
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

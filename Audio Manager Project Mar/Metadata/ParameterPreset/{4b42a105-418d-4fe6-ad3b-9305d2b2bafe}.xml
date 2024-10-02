@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{4b42a105-418d-4fe6-ad3b-9305d2b2bafe}">
+		<property name="name">
+			<value>TypesManglar</value>
+		</property>
+		<relationship name="folder">
+			<destination>{31fdc003-d7a3-42f4-921a-9834385e2745}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0d3b14eb-a322-417a-88b3-4e7e1812e314}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0d3b14eb-a322-417a-88b3-4e7e1812e314}">
+		<property name="minimum">
+			<value>19.475999999999999</value>
+		</property>
+		<property name="maximum">
+			<value>29.800000000000001</value>
+		</property>
+		<property name="initialValue">
+			<value>26.223322953020133</value>
+		</property>
+	</object>
+</objects>

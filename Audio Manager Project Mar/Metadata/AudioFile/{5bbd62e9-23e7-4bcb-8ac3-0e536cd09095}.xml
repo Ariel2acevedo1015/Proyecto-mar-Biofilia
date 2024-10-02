@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5bbd62e9-23e7-4bcb-8ac3-0e536cd09095}">
+		<property name="assetPath">
+			<value>Voz/Manglar/9.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>15.0870625</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8715c7b6-1ba4-43c6-ae26-b5f54f152017}</destination>
+		</relationship>
+	</object>
+</objects>
