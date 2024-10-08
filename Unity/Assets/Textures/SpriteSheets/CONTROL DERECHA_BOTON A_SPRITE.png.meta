@@ -1,0 +1,960 @@
+fileFormatVersion: 2
+guid: 8ea8ba4aac59a7b4cb17c07c11711d41
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_0
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 6607
+        width: 608
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3097046310ebbbb4cb8af4c54f5e2625
+      internalID: -707486626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_1
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 6607
+        width: 601
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9052b5c6789974fbeb6623c734b8a1
+      internalID: 358662051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_69
+      rect:
+        serializedVersion: 2
+        x: 3429
+        y: 4448
+        width: 601
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8d2e5832de1c740a65f8e34fd66ed9
+      internalID: 870431141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_70
+      rect:
+        serializedVersion: 2
+        x: 4513
+        y: 4448
+        width: 601
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff82000d4b3428499961b9b7abf7b9c
+      internalID: -1723242427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_71
+      rect:
+        serializedVersion: 2
+        x: 5589
+        y: 4448
+        width: 617
+        height: 767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1ef421f4646184885b44b19988adee
+      internalID: -1218122523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_72
+      rect:
+        serializedVersion: 2
+        x: 6665
+        y: 4448
+        width: 624
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62652db15564374b9bf4de8f1adbd1d
+      internalID: -724729035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_73
+      rect:
+        serializedVersion: 2
+        x: 7748
+        y: 4448
+        width: 621
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150654949d3ea734aad9b3a29530df25
+      internalID: -2132360929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_75
+      rect:
+        serializedVersion: 2
+        x: 8832
+        y: 4448
+        width: 613
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f82f94f939ba7344be64781a3a27b2e
+      internalID: -409437952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_77
+      rect:
+        serializedVersion: 2
+        x: 9908
+        y: 4448
+        width: 682
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d7d29142a2a134582984d5b1b7dd6f
+      internalID: 1489983692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_78
+      rect:
+        serializedVersion: 2
+        x: 10991
+        y: 4448
+        width: 712
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b573974552ff144933cf0ca4975dbe
+      internalID: 1911807725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_157
+      rect:
+        serializedVersion: 2
+        x: 5589
+        y: 3365
+        width: 648
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c02cf68fc63dc64499e1d8b53abf807
+      internalID: -356101541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_158
+      rect:
+        serializedVersion: 2
+        x: 6665
+        y: 3365
+        width: 721
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee755dd9253c0d45bb2c74fec513408
+      internalID: -290094632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_159
+      rect:
+        serializedVersion: 2
+        x: 7748
+        y: 3365
+        width: 758
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30683673cc466034a947bdea1ac7986d
+      internalID: -1590780720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_160
+      rect:
+        serializedVersion: 2
+        x: 8824
+        y: 3365
+        width: 724
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a851a79e973c934fb391cf3bd047002
+      internalID: 339745204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_166
+      rect:
+        serializedVersion: 2
+        x: 15310
+        y: 3365
+        width: 711
+        height: 907
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df0e1b0bb14e454b97b73c8c5697d22
+      internalID: -970832467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_211
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2289
+        width: 744
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a43ab7db6126d42b8e4b6f2a58c7bf
+      internalID: 542853511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_216
+      rect:
+        serializedVersion: 2
+        x: 5589
+        y: 2289
+        width: 698
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b86605b6236464996e120ac16a5c60
+      internalID: 424751769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_217
+      rect:
+        serializedVersion: 2
+        x: 6665
+        y: 2289
+        width: 700
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06997d1eb6886aa429e2350e90197ab4
+      internalID: -1687080976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_218
+      rect:
+        serializedVersion: 2
+        x: 7748
+        y: 2289
+        width: 709
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890e1cc0e424f314491a6ed54ecc4cad
+      internalID: -1353487098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_219
+      rect:
+        serializedVersion: 2
+        x: 8832
+        y: 2289
+        width: 655
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8574ac1f3725ef419a695327e52498a
+      internalID: -1964261750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_221
+      rect:
+        serializedVersion: 2
+        x: 9908
+        y: 2289
+        width: 726
+        height: 886
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ba135e48ed7d743b7a8e3f7dde3b20
+      internalID: -298608248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_223
+      rect:
+        serializedVersion: 2
+        x: 10991
+        y: 2289
+        width: 708
+        height: 904
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca6657e95231c94cae1306311e193ff
+      internalID: 1849315888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_225
+      rect:
+        serializedVersion: 2
+        x: 12067
+        y: 2289
+        width: 601
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f902e5289e2591847a63515d896f013c
+      internalID: -1104497527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_226
+      rect:
+        serializedVersion: 2
+        x: 13151
+        y: 2289
+        width: 601
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6a4e1448991a54dab12333306e4278
+      internalID: -1422465841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_227
+      rect:
+        serializedVersion: 2
+        x: 14227
+        y: 2289
+        width: 601
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3b09d8430081840b117298e1cf7f2a
+      internalID: 970562113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_228
+      rect:
+        serializedVersion: 2
+        x: 15310
+        y: 2289
+        width: 601
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da5693663e4abc4b9c81ec95468f855
+      internalID: -2112146740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_229
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1206
+        width: 601
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e287100db052a0b4da2eae3c033a9b82
+      internalID: 1245128372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONTROL DERECHA_BOTON A_SPRITE_230
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 1206
+        width: 601
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0d438d37504634397d3805aab15e86
+      internalID: 869571228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c7c3f7af8269eaa4bbfe689f5655105f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CONTROL DERECHA_BOTON A_SPRITE_0: -707486626
+      CONTROL DERECHA_BOTON A_SPRITE_1: 358662051
+      CONTROL DERECHA_BOTON A_SPRITE_10: -719348927
+      CONTROL DERECHA_BOTON A_SPRITE_100: 666854902
+      CONTROL DERECHA_BOTON A_SPRITE_101: -552342907
+      CONTROL DERECHA_BOTON A_SPRITE_102: 1499627665
+      CONTROL DERECHA_BOTON A_SPRITE_103: -290489987
+      CONTROL DERECHA_BOTON A_SPRITE_104: -1179735619
+      CONTROL DERECHA_BOTON A_SPRITE_105: 1579197435
+      CONTROL DERECHA_BOTON A_SPRITE_106: 663128370
+      CONTROL DERECHA_BOTON A_SPRITE_107: 1255522062
+      CONTROL DERECHA_BOTON A_SPRITE_108: -1240644344
+      CONTROL DERECHA_BOTON A_SPRITE_109: -1109899170
+      CONTROL DERECHA_BOTON A_SPRITE_11: -795542383
+      CONTROL DERECHA_BOTON A_SPRITE_110: 1332239471
+      CONTROL DERECHA_BOTON A_SPRITE_111: 401761783
+      CONTROL DERECHA_BOTON A_SPRITE_112: -1421351233
+      CONTROL DERECHA_BOTON A_SPRITE_113: -1170326625
+      CONTROL DERECHA_BOTON A_SPRITE_114: 1852753257
+      CONTROL DERECHA_BOTON A_SPRITE_115: 988174536
+      CONTROL DERECHA_BOTON A_SPRITE_116: -549658833
+      CONTROL DERECHA_BOTON A_SPRITE_117: 2082991085
+      CONTROL DERECHA_BOTON A_SPRITE_118: -60827009
+      CONTROL DERECHA_BOTON A_SPRITE_119: -1115225100
+      CONTROL DERECHA_BOTON A_SPRITE_12: -1755224582
+      CONTROL DERECHA_BOTON A_SPRITE_120: -672380223
+      CONTROL DERECHA_BOTON A_SPRITE_121: 97967353
+      CONTROL DERECHA_BOTON A_SPRITE_122: 555872884
+      CONTROL DERECHA_BOTON A_SPRITE_123: -476591808
+      CONTROL DERECHA_BOTON A_SPRITE_124: 895834086
+      CONTROL DERECHA_BOTON A_SPRITE_125: -2080269020
+      CONTROL DERECHA_BOTON A_SPRITE_126: 1966301192
+      CONTROL DERECHA_BOTON A_SPRITE_127: 717266268
+      CONTROL DERECHA_BOTON A_SPRITE_128: 658928685
+      CONTROL DERECHA_BOTON A_SPRITE_129: 351227824
+      CONTROL DERECHA_BOTON A_SPRITE_13: -33549408
+      CONTROL DERECHA_BOTON A_SPRITE_130: -1035957917
+      CONTROL DERECHA_BOTON A_SPRITE_131: 1433303287
+      CONTROL DERECHA_BOTON A_SPRITE_132: 766400514
+      CONTROL DERECHA_BOTON A_SPRITE_133: 1876161997
+      CONTROL DERECHA_BOTON A_SPRITE_134: -35467591
+      CONTROL DERECHA_BOTON A_SPRITE_135: 1880397809
+      CONTROL DERECHA_BOTON A_SPRITE_136: 1205906668
+      CONTROL DERECHA_BOTON A_SPRITE_137: 2037038968
+      CONTROL DERECHA_BOTON A_SPRITE_138: -578401833
+      CONTROL DERECHA_BOTON A_SPRITE_139: -189450236
+      CONTROL DERECHA_BOTON A_SPRITE_14: -1622495268
+      CONTROL DERECHA_BOTON A_SPRITE_140: -1015759784
+      CONTROL DERECHA_BOTON A_SPRITE_141: -1207889600
+      CONTROL DERECHA_BOTON A_SPRITE_142: -589602582
+      CONTROL DERECHA_BOTON A_SPRITE_143: -1744549725
+      CONTROL DERECHA_BOTON A_SPRITE_144: -1583214579
+      CONTROL DERECHA_BOTON A_SPRITE_145: 427143441
+      CONTROL DERECHA_BOTON A_SPRITE_146: -1932676470
+      CONTROL DERECHA_BOTON A_SPRITE_147: -1687400972
+      CONTROL DERECHA_BOTON A_SPRITE_148: -1724970209
+      CONTROL DERECHA_BOTON A_SPRITE_149: -1091396278
+      CONTROL DERECHA_BOTON A_SPRITE_15: 1301244913
+      CONTROL DERECHA_BOTON A_SPRITE_150: -953830582
+      CONTROL DERECHA_BOTON A_SPRITE_151: -1992856537
+      CONTROL DERECHA_BOTON A_SPRITE_152: 1166052407
+      CONTROL DERECHA_BOTON A_SPRITE_153: -197365827
+      CONTROL DERECHA_BOTON A_SPRITE_154: 1868940835
+      CONTROL DERECHA_BOTON A_SPRITE_155: -1695171849
+      CONTROL DERECHA_BOTON A_SPRITE_156: 1014564375
+      CONTROL DERECHA_BOTON A_SPRITE_157: -356101541
+      CONTROL DERECHA_BOTON A_SPRITE_158: -290094632
+      CONTROL DERECHA_BOTON A_SPRITE_159: -1590780720
+      CONTROL DERECHA_BOTON A_SPRITE_16: 2030208053
+      CONTROL DERECHA_BOTON A_SPRITE_160: 339745204
+      CONTROL DERECHA_BOTON A_SPRITE_161: 1669647793
+      CONTROL DERECHA_BOTON A_SPRITE_162: -165458398
+      CONTROL DERECHA_BOTON A_SPRITE_163: 1458218281
+      CONTROL DERECHA_BOTON A_SPRITE_164: -1988956044
+      CONTROL DERECHA_BOTON A_SPRITE_165: -1360145986
+      CONTROL DERECHA_BOTON A_SPRITE_166: -970832467
+      CONTROL DERECHA_BOTON A_SPRITE_167: -945285526
+      CONTROL DERECHA_BOTON A_SPRITE_168: 931432829
+      CONTROL DERECHA_BOTON A_SPRITE_169: 1670232796
+      CONTROL DERECHA_BOTON A_SPRITE_17: -958500457
+      CONTROL DERECHA_BOTON A_SPRITE_170: -424061636
+      CONTROL DERECHA_BOTON A_SPRITE_171: 1085424228
+      CONTROL DERECHA_BOTON A_SPRITE_172: -354394440
+      CONTROL DERECHA_BOTON A_SPRITE_173: -1003023296
+      CONTROL DERECHA_BOTON A_SPRITE_174: 1759736008
+      CONTROL DERECHA_BOTON A_SPRITE_175: 939109461
+      CONTROL DERECHA_BOTON A_SPRITE_176: 1429641013
+      CONTROL DERECHA_BOTON A_SPRITE_177: -1657399441
+      CONTROL DERECHA_BOTON A_SPRITE_178: 13648750
+      CONTROL DERECHA_BOTON A_SPRITE_179: 354519858
+      CONTROL DERECHA_BOTON A_SPRITE_18: 408480287
+      CONTROL DERECHA_BOTON A_SPRITE_180: -1333336299
+      CONTROL DERECHA_BOTON A_SPRITE_181: 1493481417
+      CONTROL DERECHA_BOTON A_SPRITE_182: -1404166309
+      CONTROL DERECHA_BOTON A_SPRITE_183: 1720331232
+      CONTROL DERECHA_BOTON A_SPRITE_184: 100285842
+      CONTROL DERECHA_BOTON A_SPRITE_185: -1273640467
+      CONTROL DERECHA_BOTON A_SPRITE_186: 882603850
+      CONTROL DERECHA_BOTON A_SPRITE_187: 1569950343
+      CONTROL DERECHA_BOTON A_SPRITE_188: 1659815957
+      CONTROL DERECHA_BOTON A_SPRITE_189: -460935769
+      CONTROL DERECHA_BOTON A_SPRITE_19: -1814937046
+      CONTROL DERECHA_BOTON A_SPRITE_190: -1146240300
+      CONTROL DERECHA_BOTON A_SPRITE_191: -2115269911
+      CONTROL DERECHA_BOTON A_SPRITE_192: 1824987921
+      CONTROL DERECHA_BOTON A_SPRITE_193: 1768416640
+      CONTROL DERECHA_BOTON A_SPRITE_194: 1436201855
+      CONTROL DERECHA_BOTON A_SPRITE_195: -1317885862
+      CONTROL DERECHA_BOTON A_SPRITE_196: -1025212668
+      CONTROL DERECHA_BOTON A_SPRITE_197: 1149116284
+      CONTROL DERECHA_BOTON A_SPRITE_198: 457277565
+      CONTROL DERECHA_BOTON A_SPRITE_199: 1876179643
+      CONTROL DERECHA_BOTON A_SPRITE_2: -1963951656
+      CONTROL DERECHA_BOTON A_SPRITE_20: -1946372592
+      CONTROL DERECHA_BOTON A_SPRITE_200: -473681692
+      CONTROL DERECHA_BOTON A_SPRITE_201: 1984713917
+      CONTROL DERECHA_BOTON A_SPRITE_202: 1407796676
+      CONTROL DERECHA_BOTON A_SPRITE_203: -145854916
+      CONTROL DERECHA_BOTON A_SPRITE_204: 1897162970
+      CONTROL DERECHA_BOTON A_SPRITE_205: 327957648
+      CONTROL DERECHA_BOTON A_SPRITE_206: 1462713081
+      CONTROL DERECHA_BOTON A_SPRITE_207: 959208314
+      CONTROL DERECHA_BOTON A_SPRITE_208: -987429293
+      CONTROL DERECHA_BOTON A_SPRITE_209: 1110280607
+      CONTROL DERECHA_BOTON A_SPRITE_21: -2050251318
+      CONTROL DERECHA_BOTON A_SPRITE_210: -2141324430
+      CONTROL DERECHA_BOTON A_SPRITE_211: 542853511
+      CONTROL DERECHA_BOTON A_SPRITE_212: -1948112110
+      CONTROL DERECHA_BOTON A_SPRITE_213: 1826137225
+      CONTROL DERECHA_BOTON A_SPRITE_214: 114854548
+      CONTROL DERECHA_BOTON A_SPRITE_215: -81960446
+      CONTROL DERECHA_BOTON A_SPRITE_216: 424751769
+      CONTROL DERECHA_BOTON A_SPRITE_217: -1687080976
+      CONTROL DERECHA_BOTON A_SPRITE_218: -1353487098
+      CONTROL DERECHA_BOTON A_SPRITE_219: -1964261750
+      CONTROL DERECHA_BOTON A_SPRITE_22: 1079440314
+      CONTROL DERECHA_BOTON A_SPRITE_220: -1877953328
+      CONTROL DERECHA_BOTON A_SPRITE_221: -298608248
+      CONTROL DERECHA_BOTON A_SPRITE_222: 529590969
+      CONTROL DERECHA_BOTON A_SPRITE_223: 1849315888
+      CONTROL DERECHA_BOTON A_SPRITE_224: 697492766
+      CONTROL DERECHA_BOTON A_SPRITE_225: -1104497527
+      CONTROL DERECHA_BOTON A_SPRITE_226: -1422465841
+      CONTROL DERECHA_BOTON A_SPRITE_227: 970562113
+      CONTROL DERECHA_BOTON A_SPRITE_228: -2112146740
+      CONTROL DERECHA_BOTON A_SPRITE_229: 1245128372
+      CONTROL DERECHA_BOTON A_SPRITE_23: -1018517901
+      CONTROL DERECHA_BOTON A_SPRITE_230: 869571228
+      CONTROL DERECHA_BOTON A_SPRITE_231: 1638266925
+      CONTROL DERECHA_BOTON A_SPRITE_232: -951965040
+      CONTROL DERECHA_BOTON A_SPRITE_233: 952114794
+      CONTROL DERECHA_BOTON A_SPRITE_234: 1807532415
+      CONTROL DERECHA_BOTON A_SPRITE_235: -1982841734
+      CONTROL DERECHA_BOTON A_SPRITE_236: 881569900
+      CONTROL DERECHA_BOTON A_SPRITE_237: -639303527
+      CONTROL DERECHA_BOTON A_SPRITE_238: -1265618944
+      CONTROL DERECHA_BOTON A_SPRITE_239: 1402524478
+      CONTROL DERECHA_BOTON A_SPRITE_24: -898001542
+      CONTROL DERECHA_BOTON A_SPRITE_240: -1838445218
+      CONTROL DERECHA_BOTON A_SPRITE_241: -1676968820
+      CONTROL DERECHA_BOTON A_SPRITE_242: 1855126339
+      CONTROL DERECHA_BOTON A_SPRITE_243: 1658396496
+      CONTROL DERECHA_BOTON A_SPRITE_244: 1397094606
+      CONTROL DERECHA_BOTON A_SPRITE_25: -1523294583
+      CONTROL DERECHA_BOTON A_SPRITE_26: -1280923008
+      CONTROL DERECHA_BOTON A_SPRITE_27: 587285967
+      CONTROL DERECHA_BOTON A_SPRITE_28: -168897081
+      CONTROL DERECHA_BOTON A_SPRITE_29: -1245138272
+      CONTROL DERECHA_BOTON A_SPRITE_3: -1037689627
+      CONTROL DERECHA_BOTON A_SPRITE_30: 1495025011
+      CONTROL DERECHA_BOTON A_SPRITE_31: -1049832281
+      CONTROL DERECHA_BOTON A_SPRITE_32: -1427214039
+      CONTROL DERECHA_BOTON A_SPRITE_33: 356947641
+      CONTROL DERECHA_BOTON A_SPRITE_34: -330583601
+      CONTROL DERECHA_BOTON A_SPRITE_35: -256318794
+      CONTROL DERECHA_BOTON A_SPRITE_36: 986289899
+      CONTROL DERECHA_BOTON A_SPRITE_37: -392016394
+      CONTROL DERECHA_BOTON A_SPRITE_38: 1658263488
+      CONTROL DERECHA_BOTON A_SPRITE_39: -394080645
+      CONTROL DERECHA_BOTON A_SPRITE_4: 27657434
+      CONTROL DERECHA_BOTON A_SPRITE_40: 1492865964
+      CONTROL DERECHA_BOTON A_SPRITE_41: -1754859861
+      CONTROL DERECHA_BOTON A_SPRITE_42: -1633615995
+      CONTROL DERECHA_BOTON A_SPRITE_43: -1058977634
+      CONTROL DERECHA_BOTON A_SPRITE_44: 495375751
+      CONTROL DERECHA_BOTON A_SPRITE_45: -1478059597
+      CONTROL DERECHA_BOTON A_SPRITE_46: 37168846
+      CONTROL DERECHA_BOTON A_SPRITE_47: -1592788595
+      CONTROL DERECHA_BOTON A_SPRITE_48: -1811823323
+      CONTROL DERECHA_BOTON A_SPRITE_49: -319993364
+      CONTROL DERECHA_BOTON A_SPRITE_5: 1570551897
+      CONTROL DERECHA_BOTON A_SPRITE_50: -620520904
+      CONTROL DERECHA_BOTON A_SPRITE_51: -2129980979
+      CONTROL DERECHA_BOTON A_SPRITE_52: 102849501
+      CONTROL DERECHA_BOTON A_SPRITE_53: 1860410407
+      CONTROL DERECHA_BOTON A_SPRITE_54: -114848578
+      CONTROL DERECHA_BOTON A_SPRITE_55: 887812986
+      CONTROL DERECHA_BOTON A_SPRITE_56: -891060819
+      CONTROL DERECHA_BOTON A_SPRITE_57: 2120997795
+      CONTROL DERECHA_BOTON A_SPRITE_58: -924234582
+      CONTROL DERECHA_BOTON A_SPRITE_59: 1490298967
+      CONTROL DERECHA_BOTON A_SPRITE_6: 1716682368
+      CONTROL DERECHA_BOTON A_SPRITE_60: 297403373
+      CONTROL DERECHA_BOTON A_SPRITE_61: 1051991610
+      CONTROL DERECHA_BOTON A_SPRITE_62: -1627082911
+      CONTROL DERECHA_BOTON A_SPRITE_63: -426706441
+      CONTROL DERECHA_BOTON A_SPRITE_64: -1186604475
+      CONTROL DERECHA_BOTON A_SPRITE_65: -1375008765
+      CONTROL DERECHA_BOTON A_SPRITE_66: 2122705330
+      CONTROL DERECHA_BOTON A_SPRITE_67: 1538016179
+      CONTROL DERECHA_BOTON A_SPRITE_68: -330854300
+      CONTROL DERECHA_BOTON A_SPRITE_69: 870431141
+      CONTROL DERECHA_BOTON A_SPRITE_7: -1540317585
+      CONTROL DERECHA_BOTON A_SPRITE_70: -1723242427
+      CONTROL DERECHA_BOTON A_SPRITE_71: -1218122523
+      CONTROL DERECHA_BOTON A_SPRITE_72: -724729035
+      CONTROL DERECHA_BOTON A_SPRITE_73: -2132360929
+      CONTROL DERECHA_BOTON A_SPRITE_74: 1275307429
+      CONTROL DERECHA_BOTON A_SPRITE_75: -409437952
+      CONTROL DERECHA_BOTON A_SPRITE_76: -534000150
+      CONTROL DERECHA_BOTON A_SPRITE_77: 1489983692
+      CONTROL DERECHA_BOTON A_SPRITE_78: 1911807725
+      CONTROL DERECHA_BOTON A_SPRITE_79: 428767686
+      CONTROL DERECHA_BOTON A_SPRITE_8: 295068361
+      CONTROL DERECHA_BOTON A_SPRITE_80: -1327491588
+      CONTROL DERECHA_BOTON A_SPRITE_81: 910461239
+      CONTROL DERECHA_BOTON A_SPRITE_82: -1853754552
+      CONTROL DERECHA_BOTON A_SPRITE_83: -1034192390
+      CONTROL DERECHA_BOTON A_SPRITE_84: 1190319701
+      CONTROL DERECHA_BOTON A_SPRITE_85: 1805517436
+      CONTROL DERECHA_BOTON A_SPRITE_86: -1712369848
+      CONTROL DERECHA_BOTON A_SPRITE_87: -1817855232
+      CONTROL DERECHA_BOTON A_SPRITE_88: 2061566237
+      CONTROL DERECHA_BOTON A_SPRITE_89: 649006251
+      CONTROL DERECHA_BOTON A_SPRITE_9: 214411361
+      CONTROL DERECHA_BOTON A_SPRITE_90: 1727567565
+      CONTROL DERECHA_BOTON A_SPRITE_91: 1965863221
+      CONTROL DERECHA_BOTON A_SPRITE_92: 95029636
+      CONTROL DERECHA_BOTON A_SPRITE_93: 1867292402
+      CONTROL DERECHA_BOTON A_SPRITE_94: 941815236
+      CONTROL DERECHA_BOTON A_SPRITE_95: -1781042747
+      CONTROL DERECHA_BOTON A_SPRITE_96: -284919820
+      CONTROL DERECHA_BOTON A_SPRITE_97: -781476482
+      CONTROL DERECHA_BOTON A_SPRITE_98: 1251864449
+      CONTROL DERECHA_BOTON A_SPRITE_99: -651023410
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
