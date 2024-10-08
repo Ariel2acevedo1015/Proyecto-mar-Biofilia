@@ -51,6 +51,7 @@ Este proyecto utiliza Gitflow para manejar las ramas y el flujo de trabajo de de
 - `style`: Cambios que no afectan la lógica del código (formato, espacios en blanco, etc.).
 - `assets`: Adición o modificación de archivos 3D, texturas, sonidos, etc.
 - `refactor`: Para refactorizaciones de código sin cambios en su comportamiento.
+- `new`: Para la adición de nuevos objetos, carpetas o parámetros.
 
 ### Ejemplo de  commits
 - Tipo de commit: feat
