@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/MenuVoice.bank
   Name: MenuVoice
   StudioPath: bank:/MenuVoice
-  lastModified: 638634755294612778
+  lastModified: 638635768101187465
   FileSizes:
   - Name: Desktop
     Value: 758944
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/ManglarVoice.bank
   Name: ManglarVoice
   StudioPath: bank:/ManglarVoice
-  lastModified: 638634755281530163
+  lastModified: 638635768101118879
   FileSizes:
   - Name: Desktop
     Value: 1673088
@@ -151,7 +151,7 @@ MonoBehaviour:
   - {fileID: 3844978041292749183}
   StringsBanks:
   - {fileID: 1492119482691524482}
-  cacheTime: 638634755295291146
+  cacheTime: 638635768101187465
   cacheVersion: 131619
 --- !u!114 &1492119482691524482
 MonoBehaviour:
@@ -168,7 +168,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638633859504356050
+  lastModified: 638635768101128885
   FileSizes:
   - Name: Desktop
     Value: 1192
@@ -270,7 +270,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638633859504334731
+  lastModified: 638635768101128885
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -314,7 +314,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638634755295291146
+  lastModified: 638635768101187465
   FileSizes:
   - Name: Desktop
     Value: 13440
