@@ -82,6 +82,12 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void SetGlobalParameter(string parameterName, float value)
+    {
+        RuntimeManager.StudioSystem.setParameterByName(parameterName, value);
+    }
+
+
     public void PauseAllAudio()
     {
         foreach (EventInstance eventInstance in eventIntances)

@@ -1281,7 +1281,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 7.7787056, y: 9.029613, z: 6.6626763}
   m_Center: {x: 0.79580474, y: 5.894239, z: -1.3271067}
@@ -1326,19 +1326,7 @@ MonoBehaviour:
       m_Calls: []
   m_FirstSelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1668734639}
-        m_TargetAssemblyTypeName: ManglarTypesInteractions, Assembly-CSharp
-        m_MethodName: CheckGripButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -9011,6 +8999,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1561328780}
+  - {fileID: 2077857275}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890724679 stripped
@@ -13869,6 +13858,10 @@ PrefabInstance:
       value: event:/VozInOFF/ManglarVoice4
       objectReference: {fileID: 0}
     - target: {fileID: 6040655305293097020, guid: 5d75a038b6e24a0449ed6ce43e57ad22, type: 3}
+      propertyPath: <TypesManglar>k__BackingField.Name
+      value: TypesManglar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6040655305293097020, guid: 5d75a038b6e24a0449ed6ce43e57ad22, type: 3}
       propertyPath: <Manglar>k__BackingField.Guid.Data1
       value: 2069069523
       objectReference: {fileID: 0}
@@ -14797,6 +14790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668734636}
   - component: {fileID: 1668734639}
+  - component: {fileID: 1668734640}
   m_Layer: 0
   m_Name: ManglaTypes
   m_TagString: Untagged
@@ -14831,7 +14825,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668734635}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a50aaf882a828f4d9585366c6d3bac3, type: 3}
   m_Name: 
@@ -14854,6 +14848,26 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  hasGrabbed: 0
+--- !u!114 &1668734640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668734635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56fceff4c8164454ab8c8254857168eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manglares:
+  - {fileID: 305027159}
+  - {fileID: 1206188754}
+  - {fileID: 1469281754}
+  - {fileID: 598549278}
+  interactionHandler: {fileID: 2077857276}
+  audioInstance: {fileID: 1561328781}
 --- !u!1 &1678897067
 GameObject:
   m_ObjectHideFlags: 0
@@ -16018,7 +16032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1918762147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20847,8 +20861,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918762146}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.13309878, y: -0.22862144, z: 0.04104686, w: 0.96349996}
-  m_LocalPosition: {x: 9.577865, y: 2.885789, z: 2.0381613}
+  m_LocalRotation: {x: -0.1261654, y: 0.69576037, z: 0.12616538, w: 0.6957601}
+  m_LocalPosition: {x: 8.58, y: -2.2800002, z: 0.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21304,6 +21318,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4204573578185259401, guid: 2bbbd01b7d5e3b24cac3e41e02fa1c7d, type: 3}
   m_PrefabInstance: {fileID: 2066941290}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2077857274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2077857275}
+  - component: {fileID: 2077857276}
+  m_Layer: 0
+  m_Name: VrManagerinteractions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2077857275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077857274}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 885677206}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2077857276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077857274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e884acc6977e0924e8ccdf31661e801f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerButtonAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Trigger Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e6063ab5-4e95-4593-98c1-bcb60d1b3704
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &2080229353
 PrefabInstance:
   m_ObjectHideFlags: 0

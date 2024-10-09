@@ -12,7 +12,7 @@ public class ManglarTypesInteractions : MonoBehaviour
     [SerializeField] AudioManager audioInstance;
     [SerializeField] InputActionProperty rightGripAction;
 
-    private bool hasGrabbed = false;
+    public bool hasGrabbed = false;
     private bool isPlaying = false;
     private float timer = 0f;
   
@@ -26,12 +26,13 @@ public class ManglarTypesInteractions : MonoBehaviour
 
   
 
-    private EventInstance manglart;
+    //private EventInstance manglart;
     // Inicialización
     void Start()
     {
         
         isPlaying = false;
+        //hasGrabbed = true;
         timer = 0f;
     }
 
@@ -72,12 +73,12 @@ public class ManglarTypesInteractions : MonoBehaviour
         {
             timer += Time.deltaTime;
             //float currentTime = audioInstance.GetTimelinePosition() / 1000f;  // Convertir a segundos
-            //print(timer);
+            print(timer);
 
             // Lógica de iluminación en función del tiempo
             if (timer >= lightUpTime1 )
             {
-                audioInstance.CreateInstance(FmodEvents.instance.Manglar2);
+                //audioInstance.CreateInstance(FmodEvents.instance.Manglar2);
 
                 LightUpManglar(manglares[0], "Leñoso", true);
                 manglares[0].GetComponent<XRSimpleInteractable>().enabled = true;
@@ -86,7 +87,9 @@ public class ManglarTypesInteractions : MonoBehaviour
                 // Solo interactuar si el GripButton es presionado y aún no ha interactuado
                 if (hasGrabbed)
                 {
-                    audioInstance.InitializeVoice(FmodEvents.instance.Manglar2, this.transform.position);
+                    audioInstance.SetGlobalParameter(FmodEvents.instance.TypesManglar.Name, 1);
+                   // FMODUnity.RuntimeManager.StudioSystem.setParameterByName(FmodEvents.instance.TypesManglar.Name, 1);
+                    //audioInstance.InitializeVoice(FmodEvents.instance.Manglar2, this.transform.position);
                     timer = 19.5f;
                     isPlaying = true;
                     manglares[0].GetComponent<XRSimpleInteractable>().enabled = false;

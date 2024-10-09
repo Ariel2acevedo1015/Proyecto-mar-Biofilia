@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/MenuVoice.bank
   Name: MenuVoice
   StudioPath: bank:/MenuVoice
-  lastModified: 638635768101187465
+  lastModified: 638640706689347046
   FileSizes:
   - Name: Desktop
     Value: 758944
@@ -35,10 +35,10 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/ManglarVoice.bank
   Name: ManglarVoice
   StudioPath: bank:/ManglarVoice
-  lastModified: 638635768101118879
+  lastModified: 638640706676204412
   FileSizes:
   - Name: Desktop
-    Value: 1673088
+    Value: 1673408
   Exists: 1
 --- !u!114 &-3640963685002434574
 MonoBehaviour:
@@ -67,6 +67,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 30996
+--- !u!114 &-3475906221126229386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TypesManglar
+  m_EditorClassIdentifier: 
+  Name: TypesManglar
+  StudioPath: parameter:/TypesManglar
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2915894685
+    data2: 730133611
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-2465175898264888154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,12 +170,13 @@ MonoBehaviour:
   - {fileID: 3624527236017906445}
   - {fileID: -2465175898264888154}
   - {fileID: -3640963685002434574}
-  EditorParameters: []
+  EditorParameters:
+  - {fileID: -3475906221126229386}
   MasterBanks:
   - {fileID: 3844978041292749183}
   StringsBanks:
   - {fileID: 1492119482691524482}
-  cacheTime: 638635768101187465
+  cacheTime: 638640706690019127
   cacheVersion: 131619
 --- !u!114 &1492119482691524482
 MonoBehaviour:
@@ -168,7 +193,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638635768101128885
+  lastModified: 638640706676324780
   FileSizes:
   - Name: Desktop
     Value: 1192
@@ -254,7 +279,7 @@ MonoBehaviour:
   - {fileID: 7249743382284592360}
   MinDistance: 1
   MaxDistance: 20
-  Length: 19442
+  Length: 0
 --- !u!114 &3844978041292749183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,10 +295,10 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638635768101128885
+  lastModified: 638640706676304787
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1224
   Exists: 1
 --- !u!114 &7249743382284592360
 MonoBehaviour:
@@ -289,14 +314,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: TypesManglar
   StudioPath: 
-  Min: 19.476
-  Max: 29.8
-  Default: 26.223324
+  Min: 0
+  Max: 5
+  Default: 0
   ID:
     data1: 2915894685
     data2: 730133611
-  Type: 0
-  IsGlobal: 0
+  Type: 1
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &9209322090938187192
@@ -314,7 +339,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638635768101187465
+  lastModified: 638640706690019127
   FileSizes:
   - Name: Desktop
     Value: 13440
