@@ -3,97 +3,88 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class SeedGrowthManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] seeds;  
-    [SerializeField] private GameObject tinyMangrove;  // El manglar en su fase pequeña
-    [SerializeField] private GameObject smallMangrove;  // El manglar en su fase pequeña 2
-    [SerializeField] private GameObject mediumMangrove;  // El manglar en su fase mediana
-    [SerializeField] private GameObject largeMangrove;  // El manglar en su fase grande
-    [SerializeField] InputActionProperty rightGripAction;
-    [SerializeField] GameObject crab;
-    private bool hasSelectedSeed = false;  // Bandera para verificar si ya se ha seleccionado una semilla
+    [SerializeField] private GameObject[] seeds;  // Las semillas con las que se puede interactuar
+    [SerializeField] private GameObject[] mangroveStages;  // Fases del manglar
+    [SerializeField] private GameObject crab;
+    [SerializeField] private GameObject seedManager;
+
+    private bool hasSelectedSeed = false;
+    private int currentStage = 0;
 
     void Start()
     {
-        
-        tinyMangrove.SetActive(false);
-        smallMangrove.SetActive(false);
-        mediumMangrove.SetActive(false);
-        largeMangrove.SetActive(false);
+        DeactivateAllStages();
     }
 
-    void Update()
+    private void DeactivateAllStages()
     {
-        
-        if (!hasSelectedSeed)
+        foreach (var stage in mangroveStages)
         {
-            CheckSeedSelection();
+            stage.SetActive(false);
         }
-    }
-
-    private void CheckSeedSelection()
-    {
-        if (rightGripAction.action.ReadValue<float>() > 0.1f) hasSelectedSeed = true;
+        crab.SetActive(false);
     }
 
     public void StartSeeds()
     {
-        seeds[0].SetActive(true);
-        seeds[1].SetActive(true);
-        seeds[2].SetActive(true);
-        seeds[3].SetActive(true);
-        seeds[4].SetActive(true);
-
+        foreach (GameObject seed in seeds)
+        {
+            seed.SetActive(true); // Activa las semillas cuando sea el momento adecuado
+        }
     }
+
     public void SelectSeed()
     {
-      
-              //Debug.Log("Semilla seleccionada: " + selectedSeed.name);
-
-            
+        if (!hasSelectedSeed)
+        {
+            // Desactiva todas las semillas al seleccionar una
             foreach (GameObject seed in seeds)
             {
                 seed.SetActive(false);
             }
 
-           
-            StartGrowthSequence();
-            hasSelectedSeed = true;  
+            StartMangroveGrowth(); // Inicia el crecimiento del manglar
+            hasSelectedSeed = true;
+        }
     }
 
-    private void StartGrowthSequence()
+    public void StartMangroveGrowth()
     {
-        
-        tinyMangrove.SetActive(true);
-
-        
-        StartCoroutine(GrowthCoroutine());
+        StartCoroutine(GrowMangrove());
     }
 
-    private IEnumerator GrowthCoroutine()
+    private IEnumerator GrowMangrove()
     {
-        
-        yield return new WaitForSeconds(2f); 
+        while (currentStage < mangroveStages.Length)
+        {
+            if (currentStage > 0)
+            {
+                mangroveStages[currentStage - 1].SetActive(false); // Desactivar la fase anterior
+            }
 
-        
-        
-        tinyMangrove.SetActive(false);
-        smallMangrove.SetActive(true);
+            mangroveStages[currentStage].SetActive(true); // Activar la siguiente fase
+            currentStage++;
 
-        yield return new WaitForSeconds(2f);
-        smallMangrove.SetActive(false);
-        mediumMangrove.SetActive(true);
+            yield return new WaitForSeconds(2f); // Esperar 2 segundos entre fases
+        }
 
-        yield return new WaitForSeconds(3f); 
+        // Cuando el manglar ha alcanzado su fase completa
+        if (currentStage == mangroveStages.Length)
+        {
+            mangroveStages[3].GetComponent<Outline>().enabled = false;
+            StartCoroutine(ActivateCrab()); // Iniciar la interacción del cangrejo
+        }
+    }
 
-        mediumMangrove.SetActive(false);
-        largeMangrove.SetActive(true);
-        yield return new WaitForSeconds(5f);
+    private IEnumerator ActivateCrab()
+    {
+        yield return new WaitForSeconds(5f); // Tiempo de espera antes de mostrar el cangrejo
         crab.SetActive(true);
-        largeMangrove.GetComponent<Outline>().enabled = false;
-        yield return new WaitForSeconds(2f);
-        Destroy(this.gameObject);
+        Destroy(seedManager);
+        Destroy(this);
     }
 }

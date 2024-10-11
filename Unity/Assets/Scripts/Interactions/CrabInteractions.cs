@@ -1,84 +1,141 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class CrabInteractions : MonoBehaviour
 {
+    [SerializeField] private GameObject crab; // El cangrejo
+    [SerializeField] private Outline crabOutline; // Outline del cangrejo
+    [SerializeField] private VRInteractionHandler interactionHandler; // Referencia al VRInteractionHandler
+    [SerializeField] private AudioManager audioInstance; // Audio Manager para reproducir los sonidos
+    [SerializeField] private GameObject fisherman; // Pescador que aparece
+    [SerializeField] private GameObject fish; // Peces que aparecerán
+    [SerializeField] private GameObject trash; // Basura que aparecerá
+    [SerializeField] private GameObject boat; // Bote con outline
 
-    [SerializeField] InputActionProperty rightGripAction;
-    [SerializeField] GameObject crab;
-    [SerializeField] AudioManager audioInstance;
-    [SerializeField] GameObject fish;
-    [SerializeField] GameObject trash;
-    [SerializeField] GameObject pescador;
-    [SerializeField] GameObject boat;
-
-
-    private bool hasGrabbed;
+    private bool hasGrabbed = false;
     private bool audioPlayed = false;
-    private float activationtime = 24.181f;
-    private Outline outline;
+   // private bool isPlaying = false;
+    private float activationtime = 24.181f; // Tiempo para activar el pescador
+
+    private XRSimpleInteractable crabInteractable;
+
     void Start()
     {
-       // crab = GetComponentInChildren<GameObject>();
-       
-        audioInstance.CreateInstance(FmodEvents.instance.Manglar3);
-     
-        outline = crab.GetComponent<Outline>();
-        hasGrabbed = false;
-        pescador.SetActive(false);
-        fish.SetActive(false);
-        trash.SetActive(false);
+        // Obtener el interactuable del cangrejo
+        crabInteractable = crab.GetComponent<XRSimpleInteractable>();
+
+        if (crabInteractable != null && interactionHandler != null)
+        {
+            // Añadir la interacción con el cangrejo al VRInteractionHandler
+            interactionHandler.AddInteractable(crabInteractable);
+
+            // Suscribirse al evento de interacción
+            interactionHandler.OnInteractionStarted += OnCrabInteractionStarted;
+        }
+        else
+        {
+            Debug.LogError("Error: Falta alguna referencia en CrabInteractions.");
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //animator.SetTrigger("Walk");
-        
-        //CheckForGripAction();
-        
-            //crab.SetActive(true);
-        if (hasGrabbed && !audioPlayed)
+        HandleTimedActions();
+    }
+
+    // Método invocado cuando se interactúa con el cangrejo
+    private void OnCrabInteractionStarted(XRSimpleInteractable interactable)
+    {
+        if (interactable == crabInteractable && !hasGrabbed)
         {
-               // crab.transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
-          audioInstance.InitializeVoice(FmodEvents.instance.Manglar3, crab.transform.position);
-          audioPlayed = true;
+            StartCrabInteraction();
         }
+    }
+
+    private void StartCrabInteraction()
+    {
+        // Iniciar el audio cuando se interactúa con el cangrejo
+        audioInstance.InitializeVoice(FmodEvents.instance.Manglar3, crab.transform.position);
+        //audioInstance.PlayOneShot(FmodEvents.instance.Manglar3, crab.transform.position);
+        crabOutline.enabled = false; // Desactivar el outline del cangrejo
+
+        // Remover la capacidad de interactuar con el cangrejo
+        interactionHandler.RemoveInteractable(crabInteractable);
+        hasGrabbed = true; // Marcar que la interacción fue completada
+        audioPlayed = true; // Marcar que el audio está en reproducción
+    }
+
+    private void HandleTimedActions()
+    {
         if (hasGrabbed && audioPlayed)
         {
             float currentTime = audioInstance.GetTimelinePosition() / 1000f;
-           // print(currentTime);
-            if(currentTime >= 12.121f)
-            {
-                pescador.SetActive(true);
-            }
+            print(currentTime);
 
-            if (currentTime >= activationtime)
+            // Usamos if-else para manejar los eventos en función del tiempo
+            if (currentTime >= 12.121f && currentTime < activationtime)
             {
-                fish.SetActive(true);
-                boat.GetComponent<Outline>().enabled = false;   
+                // Activar el pescador si no se ha activado antes
+                ActivateFisherman();
             }
-            if(currentTime>=61.21f)
+            else if (currentTime >= activationtime && currentTime < 61.21f)
             {
-                trash.SetActive(true);
-                print("Activado");
+                // Activar los peces en el momento de la interacción
+                ActivateFish();
             }
-            if (currentTime >= 73.20f)
+            else if (currentTime >= 61.21f && currentTime < 73.20f)
             {
-                trash.GetComponent<Trashinteraction>().audioPlayed = false;
+                // Activar la basura
+                ActivateTrash();
             }
-        }    
-        
+            else if (currentTime >= 73.20f)
+            {
+                // Cambiar el estado de la basura
+                EndTrashInteraction();
+            }
+        }
     }
 
-    public void CheckForGripAction()
+    // Funciones para gestionar cada acción
+    private void ActivateFisherman()
     {
-        //if (rightGripAction.action.ReadValue<float>() > 0.1f) 
-        hasGrabbed = true;
-        outline.enabled = false;
-        crab.GetComponent<XRSimpleInteractable>().enabled = false;
+        if (!fisherman.activeInHierarchy)
+        {
+            fisherman.SetActive(true);
+        }
+    }
+
+    private void ActivateFish()
+    {
+        if (!fish.activeInHierarchy)
+        {
+            fish.SetActive(true);
+            boat.GetComponent<Outline>().enabled = false;
+        }
+    }
+
+    private void ActivateTrash()
+    {
+        if (!trash.activeInHierarchy)
+        {
+            trash.SetActive(true);
+            print("Basura activada");
+        }
+    }
+
+    private void EndTrashInteraction()
+    {
+        trash.GetComponent<Trashinteraction>().audioPlayed = false;
+    }
+
+    void OnDestroy()
+    {
+        // Desuscribirse para evitar errores cuando se destruya el objeto
+        if (interactionHandler != null)
+        {
+            interactionHandler.OnInteractionStarted -= OnCrabInteractionStarted;
+        }
     }
 }

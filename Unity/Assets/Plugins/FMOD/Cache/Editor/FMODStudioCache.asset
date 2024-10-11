@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/ManglarVoice.bank
   Name: ManglarVoice
   StudioPath: bank:/ManglarVoice
-  lastModified: 638640706676204412
+  lastModified: 638640854634969468
   FileSizes:
   - Name: Desktop
     Value: 1673408
@@ -176,7 +176,7 @@ MonoBehaviour:
   - {fileID: 3844978041292749183}
   StringsBanks:
   - {fileID: 1492119482691524482}
-  cacheTime: 638640706690019127
+  cacheTime: 638640854634969468
   cacheVersion: 131619
 --- !u!114 &1492119482691524482
 MonoBehaviour:

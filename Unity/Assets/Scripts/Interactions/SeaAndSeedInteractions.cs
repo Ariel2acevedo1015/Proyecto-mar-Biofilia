@@ -8,41 +8,37 @@ using UnityEngine;
 
 public class SeaAndSeedInteractions : MonoBehaviour
 {
-    [SerializeField] private Transform seaRise;
-    [SerializeField] AudioManager audioInstance;
-    
-    [field: Header("Manglar2t")]
-    [field: SerializeField] public EventReference Manglar2t { get; private set; }
-    
-    //private EventInstance manglart;
-    //private float timer = 0f;
-    private float activationtime = 17.781f;
-    SeedGrowthManager seedGrowth;
-    void Start()
-    {
-         //manglart = audioInstance.CreateInstance(Manglar2t);
-        seedGrowth= GetComponent<SeedGrowthManager>();
-    }
 
-    // Update is called once per frame
+    [SerializeField] private Transform seaRise;
+    [SerializeField] private AudioManager audioInstance;
+    [SerializeField] private SeedGrowthManager seedGrowth;
+
+    private float activationTime = 17.781f;
+
     void Update()
     {
+        HandleSeaRise();
+        CheckSeedActivation();
+    }
+
+    private void HandleSeaRise()
+    {
         float currentTime = audioInstance.GetTimelinePosition() / 1000f;
-        //print(currentTime);
-        //timer += Time.deltaTime;
-        if(currentTime >= activationtime )
+        if (currentTime >= activationTime)
         {
             Vector3 newPosition = seaRise.transform.localPosition;
-
-            newPosition.y = math.lerp(seaRise.transform.localPosition.y, 0.01f, Time.deltaTime);
-
+            newPosition.y = Mathf.Lerp(seaRise.transform.localPosition.y, 0.01f, Time.deltaTime);
             seaRise.transform.localPosition = newPosition;
+        }
+    }
 
-            if (currentTime >= 23.859f && currentTime<=24.1f)
-            {
-                seedGrowth.StartSeeds();
-            }
-            
+    private void CheckSeedActivation()
+    {
+        float currentTime = audioInstance.GetTimelinePosition() / 1000f;
+        if (currentTime >= 23.859f && currentTime <= 24.1f)
+        {
+            seedGrowth.StartSeeds();  // Activa las semillas cuando el tiempo es adecuado
         }
     }
 }
+

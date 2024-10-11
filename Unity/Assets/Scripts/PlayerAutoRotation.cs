@@ -36,7 +36,7 @@ public class PlayerAutoRotation : MonoBehaviour
     void Update()
     {
         float currentTime = audioInstance.GetTimelinePosition() / 1000f;
-        print(currentTime);
+        //print(currentTime);
 
         if (currentTime >= activationtime)
         {

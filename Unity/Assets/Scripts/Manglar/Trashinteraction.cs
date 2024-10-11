@@ -9,7 +9,7 @@ public class Trashinteraction : MonoBehaviour
     [SerializeField] TrashAndFishTransition revert;
     
 
-    private bool grabbed = false;
+    //private bool grabbed = false;
     public bool audioPlayed = true;
     // Start is called before the first frame update
     void Start()
