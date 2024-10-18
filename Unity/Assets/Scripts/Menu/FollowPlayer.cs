@@ -20,14 +20,16 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+
+        UiFollowPlayer.FollowCamera(uiPopups, head, spawnDistance);
         if (isPositioningActive)
         {
             elapsedTime += Time.deltaTime;
 
             if (elapsedTime < 1f)
             {
-                UiFollowPlayer.FollowCamera(uiPopups, head, spawnDistance);
+               
                 isPositioningActive = false;
             }
            

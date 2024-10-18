@@ -1,61 +1,163 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class TrashAndFishTransition : MonoBehaviour
 {
-    [SerializeField] private Transform objectToMoveUp;     // Objeto que subirá
-    [SerializeField] private Transform objectToMoveDown;   // Objeto que bajará
-    [SerializeField] private Transform upTargetTransform;  // Transform objetivo hacia arriba
-    [SerializeField] private Transform downTargetTransform;// Transform objetivo hacia abajo
-    [SerializeField] private float transitionDuration = 2f;  // Duración de la transición en segundos
-    [SerializeField] private bool loop = true;             // Si queremos que la transición sea cíclica
+    [SerializeField] private Transform fishGroup; // Transform que agrupa los peces
+    [SerializeField] private Transform trashGroup; // Transform que agrupa la basura
+    [SerializeField] private Transform upTargetTransform; // Transform objetivo hacia arriba para los peces
+    [SerializeField] private Transform downTargetTransform; // Transform objetivo hacia abajo para la basura
+    [SerializeField] private float transitionDuration = 2f;
+    [SerializeField] private float transitionDuration1 = 8f;
+    [SerializeField] private VRInteractionHandler interactionHandler; // Referencia al VRInteractionHandler
+    private int interactionCount = 0;
+    private int maxInteractions = 1;
 
-    private Vector3 initialUpPosition;   // Posición inicial del objeto que subirá
-    private Vector3 initialDownPosition; // Posición inicial del objeto que bajará
-    private float elapsedTime = 0f;      // Tiempo transcurrido para la interpolación
-    public bool isMovingUp = true;      // Controla si los objetos están en la fase de subida/bajada
+    private bool isTransitioning = false;
+    private bool hasDoneInverseTransition = false; // Controla si la transición inversa se ha realizado
 
     void Start()
     {
-        // Guardar las posiciones iniciales
-        initialUpPosition = objectToMoveUp.position;
-        initialDownPosition = objectToMoveDown.position;
+        // Iniciar la transición inversa solo una vez
+        StartCoroutine(InverseTrashAndFishTransitionCoroutine());
+        Invoke("SetupTrashInteractions", 5f);
     }
 
-    void Update()
+    private void SetupTrashInteractions()
     {
-        // Incrementar el tiempo transcurrido
-        elapsedTime += Time.deltaTime;
-
-        // Calcular el porcentaje completado de la transición
-        float t = Mathf.Clamp01(elapsedTime / transitionDuration);
-
-        // Mover los objetos suavemente entre sus posiciones iniciales y finales
-        if (isMovingUp)
+        foreach (Transform trash in trashGroup)
         {
-            // Objeto que sube
-            objectToMoveUp.position = Vector3.Lerp(initialUpPosition, upTargetTransform.position, t);
-            // Objeto que baja
-            objectToMoveDown.position = Vector3.Lerp(initialDownPosition, downTargetTransform.position, t);
-        }
-        else
-        {
-            // Objeto que sube ahora baja, y el que bajaba ahora sube
-            objectToMoveUp.position = Vector3.Lerp(upTargetTransform.position, initialUpPosition, t);
-            objectToMoveDown.position = Vector3.Lerp(downTargetTransform.position, initialDownPosition, t);
-        }
+            // Obtener el componente de interacción de cada objeto de basura
+            XRSimpleInteractable interactable = trash.GetComponent<XRSimpleInteractable>();
 
-        // Si la transición ha finalizado
-        if (t >= 1f)
-        {
-            // Reiniciar el tiempo transcurrido
-            //elapsedTime = 0f;
-
-            // Si el loop está activo, alternar la dirección
-            if (loop)
+            // Si el objeto tiene un componente interactable, añadirlo al manejador de interacción
+            if (interactable != null)
             {
-                isMovingUp = !isMovingUp;
+                interactionHandler.AddInteractable(interactable);
+            }
+        }
+
+        // Suscribirse al evento de interacción
+        interactionHandler.OnInteractionStarted += HandleTrashInteraction;
+    }
+
+    private void HandleTrashInteraction(XRSimpleInteractable interactable)
+    {
+        // Si ya se alcanzó el número máximo de interacciones o está en transición, no hacer nada
+        if (interactionCount >= maxInteractions || isTransitioning) return;
+
+        interactionCount++;
+        StartCoroutine(TrashAndFishTransitionCoroutine());
+
+        // Si ya se alcanzó el límite de interacciones, deshabilitar la interacción
+        if (interactionCount >= maxInteractions)
+        {
+            DisableTrashInteraction();
+        }
+    }
+
+    // Corutina de transición regular: Basura baja, peces suben
+    private IEnumerator TrashAndFishTransitionCoroutine()
+    {
+        if (isTransitioning) yield break; // Asegura que solo una transición esté activa
+        isTransitioning = true;
+
+        float elapsedTime = 0f;
+        bool trahsIsDesactive = false;
+        // Guardar las posiciones iniciales de cada objeto
+        Vector3[] initialTrashPositions = new Vector3[trashGroup.childCount];
+        Vector3[] initialFishPositions = new Vector3[fishGroup.childCount];
+
+        for (int i = 0; i < trashGroup.childCount; i++)
+        {
+            initialTrashPositions[i] = trashGroup.GetChild(i).position;
+        }
+
+        for (int i = 0; i < fishGroup.childCount; i++)
+        {
+            initialFishPositions[i] = fishGroup.GetChild(i).position;
+        }
+
+        Vector3 targetTrashPos = downTargetTransform.position;
+        Vector3 targetFishPos = upTargetTransform.position;
+
+        // Realizar la transición simultánea de la basura descendiendo y los peces subiendo
+        while (elapsedTime < transitionDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / transitionDuration;
+
+            // Mover cada pez hacia la posición objetivo
+            for (int i = 0; i < fishGroup.childCount; i++)
+            {
+                fishGroup.GetChild(i).position = Vector3.Lerp(initialFishPositions[i], targetFishPos, t);
+            }
+
+
+            // Mover cada objeto de basura hacia la posición objetivo
+            
+            
+            // Esperar 3 segundos antes de desactivar o destruir la basura
+            if(!trahsIsDesactive) yield return new WaitForSeconds(3f);
+
+            // Desactivar o destruir la basura después de 3 segundos
+            for (int i = 0; i < trashGroup.childCount; i++)
+            {
+                trashGroup.GetChild(i).gameObject.SetActive(false); // Si prefieres, puedes usar Destroy() para eliminar los objetos
+                trahsIsDesactive = true;
+            }
+
+            
+            yield return null;
+        }
+
+       
+
+        isTransitioning = false;
+    }
+
+    // Corutina de transición inversa: Se ejecuta solo una vez al inicio
+    private IEnumerator InverseTrashAndFishTransitionCoroutine()
+    {
+        if (hasDoneInverseTransition) yield break; // Se asegura que solo ocurra una vez
+        hasDoneInverseTransition = true;
+
+        float elapsedTime = 0f;
+
+        // Posiciones iniciales y objetivo para la transición inversa
+        Vector3 initialTrashPos = trashGroup.position;
+        Vector3 targetTrashPos = upTargetTransform.position; // Ahora la basura sube
+        Vector3 initialFishPos = fishGroup.position;
+        Vector3 targetFishPos = downTargetTransform.position; // Ahora los peces bajan
+
+        // Realizar la transición inversa: basura subiendo y peces bajando
+        while (elapsedTime < transitionDuration1)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / transitionDuration1;
+
+            // Mover la basura hacia arriba
+            trashGroup.position = Vector3.Lerp(initialTrashPos, targetTrashPos, t);
+
+            // Mover los peces hacia abajo
+            fishGroup.position = Vector3.Lerp(initialFishPos, targetFishPos, t);
+
+            yield return null;
+        }
+    }
+
+    private void DisableTrashInteraction()
+    {
+        foreach (Transform trash in trashGroup)
+        {
+            XRSimpleInteractable interactable = trash.GetComponent<XRSimpleInteractable>();
+            if (interactable != null)
+            {
+                trash.GetComponent<Outline>().enabled = false;
+                trash.GetComponent<Collider>().enabled = false;
+                interactionHandler.RemoveInteractable(interactable);
             }
         }
     }

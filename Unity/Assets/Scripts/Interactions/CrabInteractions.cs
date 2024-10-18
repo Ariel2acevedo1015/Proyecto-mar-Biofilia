@@ -60,7 +60,8 @@ public class CrabInteractions : MonoBehaviour
         audioInstance.InitializeVoice(FmodEvents.instance.Manglar3, crab.transform.position);
         //audioInstance.PlayOneShot(FmodEvents.instance.Manglar3, crab.transform.position);
         crabOutline.enabled = false; // Desactivar el outline del cangrejo
-
+        crab.GetComponent<XRSimpleInteractable>().enabled = false;
+        crab.GetComponent<Collider>().enabled = false;
         // Remover la capacidad de interactuar con el cangrejo
         interactionHandler.RemoveInteractable(crabInteractable);
         hasGrabbed = true; // Marcar que la interacción fue completada
@@ -92,7 +93,8 @@ public class CrabInteractions : MonoBehaviour
             }
             else if (currentTime >= 73.20f)
             {
-                // Cambiar el estado de la basura
+                audioInstance.CreateInstance(FmodEvents.instance.Manglar4);
+                audioInstance.InitializeVoice(FmodEvents.instance.Manglar4, this.transform.position);
                 EndTrashInteraction();
             }
         }
@@ -127,7 +129,7 @@ public class CrabInteractions : MonoBehaviour
 
     private void EndTrashInteraction()
     {
-        trash.GetComponent<Trashinteraction>().audioPlayed = false;
+       // trash.GetComponent<Trashinteraction>().audioPlayed = false;
     }
 
     void OnDestroy()
