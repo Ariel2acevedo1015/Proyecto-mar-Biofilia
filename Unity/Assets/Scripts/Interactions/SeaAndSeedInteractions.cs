@@ -27,7 +27,7 @@ public class SeaAndSeedInteractions : MonoBehaviour
         if (currentTime >= activationTime)
         {
             Vector3 newPosition = seaRise.transform.localPosition;
-            newPosition.y = Mathf.Lerp(seaRise.transform.localPosition.y, 0.01f, Time.deltaTime/2);
+            newPosition.y = Mathf.Lerp(seaRise.transform.localPosition.y, 0.01f, Time.deltaTime/4);
             seaRise.transform.localPosition = newPosition;
         }
     }
