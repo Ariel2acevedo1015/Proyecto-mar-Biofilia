@@ -21,11 +21,21 @@ public class FmodEvents : MonoBehaviour
     [field: Header("Manglar2")]
     [field: SerializeField] public ParamRef TypesManglar { get; private set; }
     [field: SerializeField] public EventReference Manglar2 { get; private set; }
+    [field: SerializeField] public EventReference Manglar21 { get; private set; }
+    [field: SerializeField] public EventReference Manglar22 { get; private set; }
+    [field: SerializeField] public EventReference Manglar23 { get; private set; }
+    [field: SerializeField] public EventReference Manglar24 { get; private set; }
     
     [field: Header("Manglar3")]
     [field: SerializeField] public EventReference Manglar3 { get; private set; }
+    [field: SerializeField] public EventReference Manglar31 { get; private set; }
     [field: Header("Manglar4")]
     [field: SerializeField] public EventReference Manglar4 { get; private set; }
+    [field: SerializeField] public EventReference Manglar41 { get; private set; }
+
+    [field: Header("Manglar5")]
+    [field: SerializeField] public EventReference Manglar5 { get; private set; }
+
 
 
 

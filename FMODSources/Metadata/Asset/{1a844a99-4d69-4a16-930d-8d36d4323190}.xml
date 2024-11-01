@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{1a844a99-4d69-4a16-930d-8d36d4323190}">
+		<property name="assetPath">
+			<value>Voz/ManglarV2/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8715c7b6-1ba4-43c6-ae26-b5f54f152017}</destination>
+		</relationship>
+	</object>
+</objects>

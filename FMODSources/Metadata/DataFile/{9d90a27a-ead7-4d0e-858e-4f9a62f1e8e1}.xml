@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="DataFile" id="{9d90a27a-ead7-4d0e-858e-4f9a62f1e8e1}">
+		<property name="assetPath">
+			<value>Voz/ManglarV2/Jaiba op1.m4a</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8715c7b6-1ba4-43c6-ae26-b5f54f152017}</destination>
+		</relationship>
+	</object>
+</objects>

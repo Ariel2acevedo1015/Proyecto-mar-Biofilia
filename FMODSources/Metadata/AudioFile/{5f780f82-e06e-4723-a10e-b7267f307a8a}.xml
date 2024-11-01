@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5f780f82-e06e-4723-a10e-b7267f307a8a}">
+		<property name="assetPath">
+			<value>Voz/ManglarV2/2.4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.7064791666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8715c7b6-1ba4-43c6-ae26-b5f54f152017}</destination>
+		</relationship>
+	</object>
+</objects>

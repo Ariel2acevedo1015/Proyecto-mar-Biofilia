@@ -1,142 +1,158 @@
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine;
+using FMODUnity;
+using static UnityEngine.XR.OpenXR.Features.Interactions.HandInteractionProfile;
 
 public class MangroveInteraction : MonoBehaviour
 {
     [SerializeField] private GameObject[] manglares; // Leñoso, Arbustivo, Denso, Colorado
-    [SerializeField] private VRInteractionHandler interactionHandler; // Nuevo handler de interacciones
-    [SerializeField] private AudioManager audioInstance;
+    [SerializeField] private GameObject[] uiMangles;
     [SerializeField] private GameObject growthSeed;
     [SerializeField] private GameObject seed;
+    [SerializeField] private ParticleSystem spiralLeaves;
+    [SerializeField] private AudioManager audioInstance;
+    [SerializeField] private VRInteractionHandler interactionHandler; // Referencia al controlador de parámetros
 
-    private bool isPlaying = false;
-    private bool interactionCompleted = false; // Control de interacción
-    private float timer = 0f;
-
-    // Parámetros de tiempo para iluminar manglares
-    private float lightUpTime1 = 18.476f;  // Leñoso
-    private float lightUpTime2 = 21.914f;  // Arbustivo
-    private float lightUpTime3 = 23.835f;  // Denso
-    private float lightUpTime4 = 26.347f;  // Colorado
-
-    private FMOD.Studio.PARAMETER_ID mangroveParameterID;
+    public bool startInteraction = false;
+    private bool  spiralend = false, interactionEnd = false, interactionCompleted = false;
+    private float timer = 0f, time;
+    private int currentManglarIndex = 0;
+    private float[] lightUpTimes = { 18.876f, 21.914f, 23.835f, 26.347f };
 
     void Start()
     {
-        mangroveParameterID = new FMOD.Studio.PARAMETER_ID
-        {
-            data1 = 0xadcd059d,
-            data2 = 0x2b84f46b
-        };
 
-        // Configurar las interacciones para cada manglar usando el VRInteractionHandler
-        foreach (var manglar in manglares)
+        foreach (GameObject manglar in manglares)
         {
-            
+            XRSimpleInteractable interactable = manglar.GetComponent<XRSimpleInteractable>();
+
+            if (interactable != null)
+            {
+                interactionHandler.AddInteractable(interactable);
+            }
+            else
+            {
+                Debug.LogWarning($"El objeto {manglar.name} no tiene un componente XRSimpleInteractable.");
+            }
         }
-        interactionHandler.AddInteractable(manglares[0].GetComponent<XRSimpleInteractable>());
-        // Suscribirse al evento de interacción
         interactionHandler.OnInteractionStarted += OnMangroveInteractionStarted;
     }
 
     void Update()
     {
-        if (!interactionCompleted)
+        if (!interactionCompleted && startInteraction)
         {
+            if (!spiralend) Invoke("SpiralParticules", 11f);
             timer += Time.deltaTime;
 
-            if (timer >= lightUpTime1)
+            if (currentManglarIndex == 0 && timer >= lightUpTimes[0])
             {
-                LightUpManglar(manglares[0], "Leñoso", true);
-                manglares[0].GetComponent<XRSimpleInteractable>().enabled = true;
-                manglares[0].GetComponent<Collider>().enabled = true;
-                interactionCompleted = true; // Evitar que se repita
+                LightUpManglar(manglares[0], true);
+                EnableManglarInteraction(manglares[0]);
+                interactionCompleted = true;
             }
         }
 
-        if (isPlaying)
+        if (currentManglarIndex == 4)
         {
-            PlayInteractionSequence();
-        }
-    }
+            print(currentManglarIndex);
 
-    // Método invocado cuando una interacción comienza
-    private void OnMangroveInteractionStarted(XRSimpleInteractable interactable)
+            time += Time.deltaTime;
+            print(time);
+            if (time > 5f) interactionEnd = true;
+        }
+
+        if (interactionEnd)
+        {
+            foreach (GameObject ui in uiMangles) { ui.SetActive(false); }
+
+            Destroy(this);
+        }
+        
+
+    }
+    public void MangroveIndex(int index)
     {
-        // Verificar qué manglar ha sido interactuado y empezar la secuencia
-        if (manglares[0].GetComponent<XRSimpleInteractable>() == interactable)
+        if (index == currentManglarIndex)
         {
             StartInteractionSequence();
         }
     }
+    public void OnMangroveInteractionStarted(XRSimpleInteractable interactable)
+    {
+        MangroveIndex(currentManglarIndex);
+    }
 
-    // Método para iniciar la secuencia de interacción
     private void StartInteractionSequence()
     {
-        // Reseteamos el timer e iniciamos la secuencia
-        timer = 19.5f;
-        isPlaying = true;
+        //if (currentManglarIndex == 0) uiStart = true;
+        timer = lightUpTimes[currentManglarIndex];
 
-        // Iniciar el audio asociado al segundo manglar
-        audioInstance.InitializeVoice(FmodEvents.instance.Manglar2, this.transform.position);
-
-        // Desactivar el primer manglar una vez interactuado
-        manglares[0].GetComponent<XRSimpleInteractable>().enabled = false;
-        manglares[0].GetComponent<Collider>().enabled = false;
-
-        // Remover la interacción del primer manglar
-        interactionHandler.RemoveInteractable(manglares[0].GetComponent<XRSimpleInteractable>());
-
-        Debug.Log("Interacción activada");
-    }
-
-    // Método que maneja la secuencia de interacción de manglares
-    private void PlayInteractionSequence()
-    {
-        timer += Time.deltaTime;
-
-        // Cambia el manglar iluminado según el tiempo
-        if (timer >= lightUpTime2 && timer < lightUpTime3)
+        switch (currentManglarIndex)
         {
-            LightUpManglar(manglares[1], "Arbustivo", true);
-            LightUpManglar(manglares[0], "Leñoso", false);
+            case 0: audioInstance.InitializeVoice(FmodEvents.instance.Manglar21, this.transform.position); break;
+            case 1: audioInstance.InitializeVoice(FmodEvents.instance.Manglar22, this.transform.position); break;
+            case 2: audioInstance.InitializeVoice(FmodEvents.instance.Manglar23, this.transform.position); break;
+            case 3: audioInstance.InitializeVoice(FmodEvents.instance.Manglar24, this.transform.position); break;
         }
-        else if (timer >= lightUpTime3 && timer < lightUpTime4)
+
+
+        DisableManglarInteraction(manglares[currentManglarIndex]);
+
+        currentManglarIndex++;
+
+        if (currentManglarIndex < manglares.Length)
         {
-            LightUpManglar(manglares[2], "Denso", true);
-            LightUpManglar(manglares[1], "Arbustivo", false);
+            LightUpManglar(manglares[currentManglarIndex], true);
+            EnableManglarInteraction(manglares[currentManglarIndex]);
         }
-        else if (timer >= lightUpTime4)
+        else
         {
-            LightUpManglar(manglares[3], "Colorado", true);
-            LightUpManglar(manglares[2], "Denso", false);
             growthSeed.SetActive(true);
-        }
-
-        // Finalizar la interacción y activar las semillas
-        if (timer >= lightUpTime3 + 9f)
-        {
-            LightUpManglar(manglares[3], "Colorado", false);
-            interactionHandler.RemoveInteractable(manglares[0].GetComponent<XRSimpleInteractable>()); // Remover la interacción
             seed.SetActive(true);
-            Destroy(this); // Termina la secuencia de interacción
         }
     }
+    private void SpiralParticules()
+    {
+        spiralLeaves.Stop();
+        spiralend = true;
+    }
+    private void EnableManglarInteraction(GameObject manglar)
+    {
+        //if (uiStart) uiMangles[currentManglarIndex].SetActive(true);
+        manglar.GetComponent<XRSimpleInteractable>().enabled = true;
+        manglar.GetComponent<Collider>().enabled = true;
+        //manglar.GetComponent<StudioGlobalParameterTrigger>().enabled = true;
+    }
 
-    // Método auxiliar para iluminar los manglares
-    private void LightUpManglar(GameObject manglar, string type, bool active)
+    private void DisableManglarInteraction(GameObject manglar)
+    {
+
+       // if (uiStart) uiMangles[currentManglarIndex].SetActive(false);
+        manglar.GetComponent<XRSimpleInteractable>().enabled = false;
+        manglar.GetComponent<Collider>().enabled = false;
+        //manglar.GetComponent<StudioGlobalParameterTrigger>().enabled = false;
+        LightUpManglar(manglar, false);
+    }
+
+    private void LightUpManglar(GameObject manglar, bool active)
     {
         Outline manglarOutline = manglar.GetComponent<Outline>();
-        if (manglarOutline != null && active)
+        if (manglarOutline != null)
         {
-            manglarOutline.enabled = true;
+            manglarOutline.enabled = active;
         }
-        else if (!active)
+    }
+
+    void OnDestroy()
+    {
+        audioInstance.CleanUp();
+       
+        // Desuscribirse para evitar errores cuando se destruya el objeto
+        if (interactionHandler != null)
         {
-            manglarOutline.enabled = false;
+            interactionHandler.OnInteractionStarted -= OnMangroveInteractionStarted;
+
         }
     }
 }
-

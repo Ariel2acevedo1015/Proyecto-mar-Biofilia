@@ -39,8 +39,7 @@ public class SeedGrowthManager : MonoBehaviour
 
     public void SelectSeed()
     {
-        if (!hasSelectedSeed)
-        {
+        
             // Desactiva todas las semillas al seleccionar una
             foreach (GameObject seed in seeds)
             {
@@ -49,7 +48,7 @@ public class SeedGrowthManager : MonoBehaviour
 
             StartMangroveGrowth(); // Inicia el crecimiento del manglar
             hasSelectedSeed = true;
-        }
+        
     }
 
     public void StartMangroveGrowth()

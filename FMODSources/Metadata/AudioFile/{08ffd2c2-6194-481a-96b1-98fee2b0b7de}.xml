@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{08ffd2c2-6194-481a-96b1-98fee2b0b7de}">
+		<property name="assetPath">
+			<value>Voz/ManglarV2/0 Audio Completo manglar.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>162.38399999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8715c7b6-1ba4-43c6-ae26-b5f54f152017}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,38 +1,49 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    [SerializeField] GameObject uiPopups;
-    [SerializeField] Transform head;
-    
-    private float spawnDistance = 4f;
-    private float elapsedTime = 0f;
+    [SerializeField] private GameObject uiPopups;
+    [SerializeField] private Transform head;
+    [SerializeField] private bool followPlayer = true; // Seguir al jugador
+    [SerializeField] private bool onlyOrient = false;  // Solo orientarse hacia el jugador
+    [SerializeField] private float spawnDistance = 4f;
     private bool isPositioningActive = true;
 
     private void Start()
     {
-        //UiFollowPlayer.FollowCamera(uiPopups, head, spawnDistance);
-        //this.transform.Rotate(0, 180, 0);
-        //head = Camera.main.transform;
+        head = Camera.main.transform;
+        PositionUI();
     }
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
-
-
-        UiFollowPlayer.FollowCamera(uiPopups, head, spawnDistance);
         if (isPositioningActive)
         {
-            elapsedTime += Time.deltaTime;
-
-            if (elapsedTime < 1f)
+            if (followPlayer)
             {
-               
-                isPositioningActive = false;
+                UiFollowPlayer.FollowCamera(uiPopups, head, spawnDistance);
             }
-           
+            else if (onlyOrient)
+            {
+                UiFollowPlayer.OrientTowardsCamera(uiPopups, head);
+            }
+        }
+    }
+
+    private void PositionUI()
+    {
+        if (followPlayer)
+        {
+            UiFollowPlayer.FollowCamera(uiPopups, head, spawnDistance);
+        }
+        else if (onlyOrient)
+        {
+            UiFollowPlayer.OrientTowardsCamera(uiPopups, head);
+        }
+        else
+        {
+            UiFollowPlayer.SetPositionOnce(uiPopups, head, spawnDistance);
         }
     }
 }

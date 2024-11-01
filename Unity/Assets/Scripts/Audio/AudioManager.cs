@@ -19,18 +19,14 @@ public class AudioManager : MonoBehaviour
         instance = this;
         
         eventIntances = new List<EventInstance>();
-       
-        
-       
-        
         
     }
 
-    private void Start()
-    {
-        string currentSceneName = SceneManager.GetActiveScene().name;
+   
 
-        switch (currentSceneName)
+    public void PlayZoneAudio(string sceneName)
+    {
+        switch (sceneName)
         {
             case "Menu":
                 InitializeVoice(FmodEvents.instance.MenuVoice, this.transform.position);
@@ -38,7 +34,7 @@ public class AudioManager : MonoBehaviour
 
             case "PrototipoManglar":
                 InitializeVoice(FmodEvents.instance.Manglar, this.transform.position);
-               
+
                 break;
 
             case "Zone2":
@@ -50,12 +46,6 @@ public class AudioManager : MonoBehaviour
                 Debug.LogWarning("No voice event for this scene.");
                 break;
         }
-    }
-
-    private void Update()
-    {
-        
-       
     }
 
     public void PlayOneShot(EventReference sound, Vector3 Worldpos)
@@ -87,7 +77,36 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.StudioSystem.setParameterByName(parameterName, value);
     }
 
+    public void PlayVoiceSegment(EventReference voiceEvent, float startTime)
+    {
+        if (voiceEventInstance.isValid())
+        {
+            voiceEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
 
+        voiceEventInstance = FMODUnity.RuntimeManager.CreateInstance(voiceEvent);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(voiceEventInstance, transform, GetComponent<Rigidbody>());
+        voiceEventInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
+
+        // Configurar el tiempo de inicio del evento
+        voiceEventInstance.setTimelinePosition((int)(startTime * 1000)); // Convertir segundos a milisegundos
+        voiceEventInstance.start();
+    }
+    public void PauseVoice()
+    {
+        if (voiceEventInstance.isValid())
+        {
+            voiceEventInstance.setPaused(true);
+        }
+    }
+
+    public void ResumeVoice()
+    {
+        if (voiceEventInstance.isValid())
+        {
+            voiceEventInstance.setPaused(false);
+        }
+    }
     public void PauseAllAudio()
     {
         foreach (EventInstance eventInstance in eventIntances)
@@ -126,7 +145,7 @@ public class AudioManager : MonoBehaviour
         voiceEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         voiceEventInstance.release();
     }
-    private void CleanUp()
+    public void CleanUp()
     {
         foreach(EventInstance eventInstance in eventIntances)
         {

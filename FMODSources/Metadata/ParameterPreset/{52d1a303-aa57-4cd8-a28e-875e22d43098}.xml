@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{52d1a303-aa57-4cd8-a28e-875e22d43098}">
+		<property name="name">
+			<value>ManglaresSelect</value>
+		</property>
+		<relationship name="folder">
+			<destination>{31fdc003-d7a3-42f4-921a-9834385e2745}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0d038522-a73e-47a1-a884-1a2defdc218e}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0d038522-a73e-47a1-a884-1a2defdc218e}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Manglar1</value>
+			<value>Manglar2</value>
+			<value>Manglar3</value>
+			<value>Manglar4</value>
+			<value>Manglar 5</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
