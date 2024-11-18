@@ -42,19 +42,19 @@ Material:
     m_Ints: []
     m_Floats:
     - _Disolve: 0
-    - _NormalStrength: -1.71
+    - _NormalStrength: 1.41
     - _NormalTiling: -1.49
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 0.39
     - _Strength: 0
-    - _distorsion: 0.19
+    - _distorsion: 1.99
     - _vertexDisplacement: -0.05
     - _waterDepth: -12.29
     m_Colors:
     - _Color: {r: 0.10377344, g: 0.11458274, b: 1, a: 0.22745098}
     - _Color_1: {r: 0.09803919, g: 0.6676658, b: 0.9490196, a: 0.15294118}
-    - _SpecularColor: {r: 1, g: 0.216981, b: 0.216981, a: 1}
+    - _SpecularColor: {r: 0.21568626, g: 1, b: 0.97033995, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &108921203867677707
 MonoBehaviour:

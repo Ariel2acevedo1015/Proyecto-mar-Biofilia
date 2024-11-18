@@ -35,6 +35,9 @@ public class FmodEvents : MonoBehaviour
 
     [field: Header("Manglar5")]
     [field: SerializeField] public EventReference Manglar5 { get; private set; }
+    [field: Header("Manglar6")]
+    [field: SerializeField] public EventReference Manglar6 { get; private set; }
+    [field: SerializeField] public EventReference Manglar62 { get; private set; }
 
 
 

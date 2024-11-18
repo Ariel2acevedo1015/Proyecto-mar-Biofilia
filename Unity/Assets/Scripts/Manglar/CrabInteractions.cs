@@ -11,11 +11,13 @@ public class CrabInteractions : MonoBehaviour
     [SerializeField] private AudioManager audioInstance; // Audio Manager para reproducir los sonidos
     [SerializeField] private GameObject fisherman; // Pescador que aparece
     [SerializeField] private GameObject fish; // Peces que aparecerán
-    [SerializeField] private GameObject trash; // Basura que aparecerá
+   // [SerializeField] private GameObject trash; // Basura que aparecerá
     [SerializeField] private GameObject boat; // Bote con outline
+    [SerializeField] private GameObject StartedFish; // Bote con outline
 
     private bool hasGrabbed = false;
     private bool audioPlayed = false;
+    private bool FisherInteract = false;
    // private bool isPlaying = false;
     private float activationtime = 24.181f; // Tiempo para activar el pescador
 
@@ -81,23 +83,34 @@ public class CrabInteractions : MonoBehaviour
                 // Activar el pescador si no se ha activado antes
                 ActivateFisherman();
             }
-            else if (currentTime >= activationtime && currentTime < 61.21f)
+
+            if (FisherInteract)
             {
+                Invoke("ActiveFish", 12f);
+            }
+             
+          //  else if (currentTime >= activationtime && currentTime < 61.21f)
+         //   {
                 // Activar los peces en el momento de la interacción
-                ActivateFish();
-            }
-            else if (currentTime >= 61.21f && currentTime < 73.20f)
-            {
+            //    ActivateFish();
+          //  }
+           // else if (currentTime >= 61.21f && currentTime < 73.20f)
+           // {
                 // Activar la basura
-                ActivateTrash();
-            }
-            else if (currentTime >= 73.20f)
-            {
+           //     ActivateTrash();
+          //  }
+           // else if (currentTime >= 73.20f)
+           // {
                // audioInstance.CreateInstance(FmodEvents.instance.Manglar4);
-                audioInstance.InitializeVoice(FmodEvents.instance.Manglar5, this.transform.position);
-                EndTrashInteraction();
-            }
+             //   audioInstance.InitializeVoice(FmodEvents.instance.Manglar5, this.transform.position);
+            //    EndTrashInteraction();
+            //}
         }
+    }
+
+    private void ActiveFish()
+    {
+        StartedFish.SetActive(true);
     }
 
     // Funciones para gestionar cada acción
@@ -109,32 +122,24 @@ public class CrabInteractions : MonoBehaviour
         }
     }
 
-    private void ActivateFish()
+    public void ActivateFish()
     {
+        audioInstance.CleanUp();
+        audioInstance.InitializeVoice(FmodEvents.instance.Manglar6, this.transform.position);
+
         if (!fish.activeInHierarchy)
         {
             fish.SetActive(true);
-            boat.GetComponent<Outline>().enabled = false;
+            print("peces activados");
         }
     }
 
-    private void ActivateTrash()
-    {
-        if (!trash.activeInHierarchy)
-        {
-            trash.SetActive(true);
-            print("Basura activada");
-        }
-    }
-
-    private void EndTrashInteraction()
-    {
-       // trash.GetComponent<Trashinteraction>().audioPlayed = false;
-    }
+   
 
     public void FisherManVoice()
     {
         audioInstance.InitializeVoice(FmodEvents.instance.Manglar5, this.transform.position);
+        FisherInteract = true;
     }
 
     void OnDestroy()

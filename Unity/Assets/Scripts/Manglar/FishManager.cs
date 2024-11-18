@@ -5,92 +5,127 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class FishManager : MonoBehaviour
 {
     [SerializeField] private VRInteractionHandler interactionHandler; // Referencia al VRInteractionHandler
-    [SerializeField] private GameObject infoUI; // Ventana de información que se mostrará al interactuar
+    [SerializeField] private GameObject[] fishUIs; // Ventanas de información para cada pez
     [SerializeField] private GameObject[] fishObjects; // Array de peces con los que se puede interactuar
-    [SerializeField] private int maxInteractions = 2; // Número máximo de veces que se puede interactuar con cada pez
-    private bool isInfoMenuActive = false;
-    private int interactionCount = 0; // Contador de interacciones
-
+    [SerializeField] private GameObject trash; // Array de peces con los que se puede interactuar
+    [SerializeField] private GameObject trashs; // Basura que aparecerá
+    [SerializeField] private int maxInteractions = 2; // Número máximo de interacciones permitidas por pez
+    [SerializeField] private AudioManager audioManager;
+    private int[] fishInteractionCounts; // Contador por pez para rastrear interacciones
+    private bool fishInteractionEnd = false;
+    SkyRotation skyRotation;
     void Start()
     {
-        // Desactivar la UI inicialmente
-        infoUI.SetActive(false);
+        trash.SetActive(false);
+        // Inicializar contadores y desactivar todas las UIs al inicio
+        fishInteractionCounts = new int[fishObjects.Length];
+        foreach (var fishUI in fishUIs)
+        {
+            fishUI.SetActive(false);
+        }
 
         // Iterar sobre cada pez y agregarlo al VRInteractionHandler
-        foreach (GameObject fish in fishObjects)
+        for (int i = 0; i < fishObjects.Length; i++)
         {
-            XRSimpleInteractable interactable = fish.GetComponent<XRSimpleInteractable>();
-
+            XRSimpleInteractable interactable = fishObjects[i].GetComponent<XRSimpleInteractable>();
             if (interactable != null)
             {
                 interactionHandler.AddInteractable(interactable);
             }
             else
             {
-                Debug.LogWarning($"El objeto {fish.name} no tiene un componente XRSimpleInteractable.");
+                Debug.LogWarning($"El objeto {fishObjects[i].name} no tiene un componente XRSimpleInteractable.");
             }
         }
 
         // Suscribirse al evento de interacción
         interactionHandler.OnInteractionStarted += HandleInteraction;
     }
+    private void Update()
+    {
+        float currentTime = audioManager.GetTimelinePosition() / 1000f;
 
+        if(currentTime==41.953f && fishInteractionEnd) { trash.SetActive(true); }
+    }
     private void HandleInteraction(XRSimpleInteractable interactable)
     {
-        // Verificar si el interactable es uno de los peces, para evitar que la interacción de basura se active aquí
-        if (!IsFishInteractable(interactable)) return;
+        // Obtener el índice del pez interactuado
+        int fishIndex = GetFishIndex(interactable);
+        if (fishIndex == -1) return; // No es un pez válido
 
-        if (isInfoMenuActive || interactionCount >= maxInteractions) return;
+        // Verificar si ya alcanzó el límite de interacciones
+        if (fishInteractionCounts[fishIndex] >= maxInteractions) return;
 
-        // Incrementar el contador de interacciones
-        interactionCount++;
+        // Incrementar el contador de interacciones del pez
+        fishInteractionCounts[fishIndex]++;
 
-        // Activar la ventana de información y establecer la bandera como true
-        infoUI.SetActive(true);
-        isInfoMenuActive = true;
+        // Mostrar la UI asociada al pez
+        fishUIs[fishIndex].SetActive(true);
 
-        // Ocultar la ventana después de 10 segundos
-        Invoke("HideInfoUI", 10f);
-
-        // Si ya se alcanzó el límite de interacciones, deshabilitar la interacción en todos los peces
-        if (interactionCount >= maxInteractions)
+        // Deshabilitar la interacción con el pez después de que alcance el máximo permitido
+        if (fishInteractionCounts[fishIndex] >= maxInteractions)
         {
-            DisableAllFishInteractions();
+            DisableFishInteraction(fishObjects[fishIndex]);
+        }
+
+        // Ocultar la UI después de un tiempo
+        Invoke(nameof(HideInfoUI), 10f);
+    }
+
+    private int GetFishIndex(XRSimpleInteractable interactable)
+    {
+        // Obtener el índice del pez interactuado
+        for (int i = 0; i < fishObjects.Length; i++)
+        {
+            if (fishObjects[i].GetComponent<XRSimpleInteractable>() == interactable)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void HideInfoUI()
+    {
+        foreach (var fishUI in fishUIs)
+        {
+            fishUI.SetActive(false);
         }
     }
 
-    private bool IsFishInteractable(XRSimpleInteractable interactable)
+    public void ActivatedAudio()
     {
-        // Verificar si el interactable es uno de los peces
-        foreach (GameObject fish in fishObjects)
+        audioManager.ResumeAllAudio();
+    }
+
+
+    public void PauseAudio()
+    {
+        audioManager.PauseAllAudio();
+    }
+    public void ActivateTrash()
+    {
+        if (!trashs.activeInHierarchy)
         {
-            if (fish.GetComponent<XRSimpleInteractable>() == interactable)
-            {
-                return true; // Es un pez
-            }
+            skyRotation.SkyChange();
+            audioManager.InitializeVoice(FmodEvents.instance.Manglar62, this.transform.position);
+            trashs.SetActive(true);
+            print("Basura activada");
         }
-        return false; // No es un pez
     }
-
-    private void HideInfoUI()
+    public void FinishUIinteraction()
     {
-        infoUI.SetActive(false);
-        isInfoMenuActive = false;
+        fishInteractionEnd = true;
     }
-
-    private void DisableAllFishInteractions()
+    private void DisableFishInteraction(GameObject fish)
     {
-        // Desactivar la interacción en todos los peces
-        foreach (GameObject fish in fishObjects)
+        XRSimpleInteractable fishInteractable = fish.GetComponent<XRSimpleInteractable>();
+        if (fishInteractable != null)
         {
-            XRSimpleInteractable fishInteractable = fish.GetComponent<XRSimpleInteractable>();
-            if (fishInteractable != null)
-            {
-                fishInteractable.enabled = false;
-                fish.GetComponent<Outline>().enabled = false;
-                fish.GetComponent<Collider>().enabled = false;
-                interactionHandler.RemoveInteractable(fishInteractable);
-            }
+            fishInteractable.enabled = false;
+            fish.GetComponent<Outline>().enabled = false;
+            fish.GetComponent<Collider>().enabled = false;
+            interactionHandler.RemoveInteractable(fishInteractable);
         }
     }
 

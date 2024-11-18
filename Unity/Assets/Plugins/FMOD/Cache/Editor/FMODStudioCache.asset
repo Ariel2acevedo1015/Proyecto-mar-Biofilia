@@ -20,6 +20,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 758944
   Exists: 1
+--- !u!114 &-8228821476770015430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VozInOFF/ManglarVoice6
+  m_EditorClassIdentifier: 
+  Path: event:/VozInOFF/ManglarVoice6
+  Guid:
+    Data1: 339614541
+    Data2: 1204856501
+    Data3: 790940852
+    Data4: -863182421
+  Banks:
+  - {fileID: -7028619013229456476}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42792
+--- !u!114 &-7800844636486666846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VozInOFF/ManglarVoice6 3
+  m_EditorClassIdentifier: 
+  Path: event:/VozInOFF/ManglarVoice6 3
+  Guid:
+    Data1: -1195464874
+    Data2: 1339854551
+    Data3: -1200530778
+    Data4: -1050000300
+  Banks:
+  - {fileID: -7028619013229456476}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16176
 --- !u!114 &-7028619013229456476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,10 +89,10 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/ManglarVoice.bank
   Name: ManglarVoice
   StudioPath: bank:/ManglarVoice
-  lastModified: 638659022238336281
+  lastModified: 638675297912569252
   FileSizes:
   - Name: Desktop
-    Value: 1326752
+    Value: 1995712
   Exists: 1
 --- !u!114 &-5705579380513778583
 MonoBehaviour:
@@ -147,6 +201,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-3044696169527807397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VozInOFF/ManglarVoice6 2
+  m_EditorClassIdentifier: 
+  Path: event:/VozInOFF/ManglarVoice6 2
+  Guid:
+    Data1: -87358858
+    Data2: 1282856358
+    Data3: 941943959
+    Data4: -2126988963
+  Banks:
+  - {fileID: -7028619013229456476}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9264
 --- !u!114 &-2465175898264888154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +313,9 @@ MonoBehaviour:
   - {fileID: 758360277176192172}
   - {fileID: 6555249702076593045}
   - {fileID: 1944615361373813448}
+  - {fileID: -8228821476770015430}
+  - {fileID: -7800844636486666846}
+  - {fileID: -3044696169527807397}
   EditorParameters:
   - {fileID: -3475906221126229386}
   - {fileID: 8713067528472880319}
@@ -239,7 +323,7 @@ MonoBehaviour:
   - {fileID: 3844978041292749183}
   StringsBanks:
   - {fileID: 1492119482691524482}
-  cacheTime: 638659022238336281
+  cacheTime: 638675297912569252
   cacheVersion: 131619
 --- !u!114 &758360277176192172
 MonoBehaviour:
@@ -283,10 +367,10 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638658084752778608
+  lastModified: 638670084857905856
   FileSizes:
   - Name: Desktop
-    Value: 1478
+    Value: 1598
   Exists: 1
 --- !u!114 &1944615361373813448
 MonoBehaviour:
@@ -413,7 +497,7 @@ MonoBehaviour:
   Path: ../FMODSources/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638658084752757957
+  lastModified: 638670084857870784
   FileSizes:
   - Name: Desktop
     Value: 1452

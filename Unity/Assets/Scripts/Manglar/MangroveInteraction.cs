@@ -58,7 +58,7 @@ public class MangroveInteraction : MonoBehaviour
             print(currentManglarIndex);
 
             time += Time.deltaTime;
-            print(time);
+            //print(time);
             if (time > 5f) interactionEnd = true;
         }
 
