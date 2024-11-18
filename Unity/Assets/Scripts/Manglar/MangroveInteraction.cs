@@ -93,7 +93,7 @@ public class MangroveInteraction : MonoBehaviour
             case 0: audioInstance.InitializeVoice(FmodEvents.instance.Manglar21, this.transform.position); break;
             case 1: audioInstance.InitializeVoice(FmodEvents.instance.Manglar22, this.transform.position); break;
             case 2: audioInstance.InitializeVoice(FmodEvents.instance.Manglar23, this.transform.position); break;
-            case 3: audioInstance.InitializeVoice(FmodEvents.instance.Manglar24, this.transform.position); break;
+           // case 3: audioInstance.InitializeVoice(FmodEvents.instance.Manglar24, this.transform.position); break;
         }
 
 

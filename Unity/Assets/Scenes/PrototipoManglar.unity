@@ -1100,6 +1100,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1945967379}
+  - {fileID: 1057008256}
   m_Father: {fileID: 1131181710}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &115138302
@@ -1118,10 +1119,10 @@ MonoBehaviour:
   pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
   - {x: 19.814743, y: 4.985234, z: -2.2174406}
-  - {x: 7.3655276, y: 3.3172567, z: 2.6905444}
-  - {x: 3.9406273, y: 2.8401992, z: 1.4889846}
-  - {x: 8.367837, y: 3.0712938, z: -3.145626}
-  - {x: 10.577288, y: 2.4041483, z: 3.0202827}
+  - {x: 7.3655276, y: 3.3496947, z: 2.6905444}
+  - {x: 3.9406273, y: 2.6207633, z: 1.4889846}
+  - {x: 8.367837, y: 2.6767023, z: -3.145626}
+  - {x: 10.577288, y: 3.6690595, z: 3.0202827}
   - {x: -13.072488, y: 3.6907673, z: 7.6111703}
   - {x: -13.23296, y: 4.6394796, z: 0.8645015}
   - {x: -10.686721, y: 7.2988253, z: 5.6026716}
@@ -2097,7 +2098,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 248423277}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -4602,6 +4603,7 @@ MonoBehaviour:
   mangrove: {fileID: 1668734640}
   spiralLeaves: {fileID: 2106489524}
   sceneName: 
+  guia: {fileID: 1224277557}
 --- !u!114 &406568642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12504,6 +12506,62 @@ MonoBehaviour:
   audioInstance: {fileID: 1561328781}
   xrOrigin: {fileID: 2527027917962499722}
   activationtime: 4.56
+--- !u!1 &650250021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650250022}
+  - component: {fileID: 650250023}
+  m_Layer: 0
+  m_Name: Manglar Types (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &650250022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650250021}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1945967379}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &650250023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650250021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: ManglarTipos2
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 2.873227, y: 7.889096, z: 10.97121}
+  - {x: 12.639313, y: 9.237808, z: 10.424543}
+  - {x: 19.558136, y: 9.140312, z: 3.3158193}
+  - {x: 17.244535, y: 10.213317, z: 0}
+  - {x: 15.899325, y: 7.803894, z: 7.5230846}
+  nodeCount: 5
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
 --- !u!1 &660720423
 GameObject:
   m_ObjectHideFlags: 0
@@ -23127,6 +23185,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055984684}
   m_CullTransparentMesh: 1
+--- !u!1 &1057008255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1057008256}
+  - component: {fileID: 1057008257}
+  m_Layer: 0
+  m_Name: Semilla
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1057008256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057008255}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 115138301}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1057008257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057008255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: Semilla
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 21.53546, y: 7.889096, z: 10.97121}
+  - {x: 12.639313, y: 12.035593, z: 16.191912}
+  - {x: 8.909338, y: 9.887027, z: 11.868194}
+  - {x: 15.197641, y: 7.7471914, z: 9.913247}
+  - {x: 9.901302, y: 6.868231, z: 8.516748}
+  nodeCount: 5
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
 --- !u!1 &1064837706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: eef823a0d743d8942b54d878cc992b37, type: 3}
@@ -29724,6 +29838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathname: Welcome Start
   time: 8
+  easeType: 14
 --- !u!1 &1229912008
 GameObject:
   m_ObjectHideFlags: 0
@@ -40908,6 +41023,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1224277558}
+        m_TargetAssemblyTypeName: GuiaPath, Assembly-CSharp
+        m_MethodName: ChangePath
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Semilla
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1801702409}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -49969,7 +50096,6 @@ MonoBehaviour:
   - {fileID: 305027159}
   - {fileID: 1206188754}
   - {fileID: 1469281754}
-  - {fileID: 598549278}
   uiMangles:
   - {fileID: 3838835464613369084}
   - {fileID: 826414423}
@@ -57359,6 +57485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1945967379}
+  - component: {fileID: 1945967380}
   m_Layer: 0
   m_Name: Manglar Types
   m_TagString: Untagged
@@ -57378,9 +57505,34 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 650250022}
   m_Father: {fileID: 115138301}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945967380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945967378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: ManglarTipos
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: -10.68672, y: 7.298825, z: 5.602672}
+  - {x: 4.383374, y: 5.44428, z: 15.089934}
+  - {x: 8.302288, y: 7.1935844, z: 8.230541}
+  - {x: 4.2565656, y: 6.235347, z: 7.2915096}
+  - {x: 2.8732271, y: 7.889096, z: 10.971212}
+  nodeCount: 5
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
 --- !u!4 &1948563025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5943695183410878382, guid: 1ba184a7d9b126e41975793936ae12d6, type: 3}
@@ -57398,9 +57550,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guia
       objectReference: {fileID: 0}
+    - target: {fileID: 217960907747010467, guid: 243bef28b3706b34f8a5085c2f292f60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2447723689661918548, guid: 243bef28b3706b34f8a5085c2f292f60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.8
+      value: 20.37
       objectReference: {fileID: 0}
     - target: {fileID: 2447723689661918548, guid: 243bef28b3706b34f8a5085c2f292f60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -57437,6 +57593,10 @@ PrefabInstance:
     - target: {fileID: 2447723689661918548, guid: 243bef28b3706b34f8a5085c2f292f60, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900207976690497909, guid: 243bef28b3706b34f8a5085c2f292f60, type: 3}
+      propertyPath: m_PreviewTimeScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63586,6 +63746,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1224277558}
+        m_TargetAssemblyTypeName: GuiaPath, Assembly-CSharp
+        m_MethodName: ChangePath
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ManglarTipos2
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 826414423}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -69134,6 +69306,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1224277558}
+        m_TargetAssemblyTypeName: GuiaPath, Assembly-CSharp
+        m_MethodName: ChangePath
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ManglarTipos
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 3838835464613369084}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive

@@ -14,6 +14,8 @@ public class LogoInteraction : MonoBehaviour
     [SerializeField] private string sceneName;
     //[SerializeField] private MangroveInteraction mangrove;
     private bool hasInteracted = false;
+    [SerializeField] private GameObject guia;
+    //GuiaPath guia;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class LogoInteraction : MonoBehaviour
         spiralLeaves.SetActive(true);
         fog.GetComponent<ParticleSystem>().Stop();
         Animator.SetBool("Active", true);
+        Invoke("GuiaStart",120f);
         //fog.SetActive(false);
         mangrove.enabled=true;
         mangrove.startInteraction = true;
@@ -41,7 +44,10 @@ public class LogoInteraction : MonoBehaviour
         AudioManager.instance.PlayZoneAudio(sceneName);
     }
 
-
+    private void GuiaStart()
+    {
+       guia.SetActive(true);
+    }
     private void OnDestroy()
     {
         // Limpiar la suscripción al destruir el objeto
